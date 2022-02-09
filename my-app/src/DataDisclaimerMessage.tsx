@@ -5,7 +5,10 @@ const DataDisclaimerMessage: React.FC = () => {
         <Message
             warning
             icon='warning sign'
-            header='This data was last updated on 8 February 2022'
+            content='
+                This data is currently filtering out any data points relating to product owners/managers, engineering managers and management positions.
+                This data was last updated on 8 February 2022.
+                '
         />
     )
 }

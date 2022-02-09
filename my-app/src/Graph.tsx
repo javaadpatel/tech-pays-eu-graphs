@@ -9,15 +9,7 @@ interface GraphProps {
 
 const Graph: React.FC<GraphProps> = ({ companySalaryData, useTotalCompensation }) => {
 
-    const convertArrayToObject = (array: number[], key: string) => {
-        const initialValue = {};
-        return array.reduce((obj: any, item: any) => {
-            return {
-                ...obj,
-                [item[key]]: item,
-            };
-        }, initialValue);
-    };
+    const strokeWidth = 2;
 
     const computePercentiles = (companySalaryData: CompanySalaryData) => {
         const percentilesToCalculate = [50, 70, 80, 90];
@@ -27,9 +19,6 @@ const Graph: React.FC<GraphProps> = ({ companySalaryData, useTotalCompensation }
             useTotalCompensation ? companySalaryData.tierOneData.map(x => x.totalCompensationNumber) :
                 companySalaryData.tierOneData.map(x => x.baseSalaryNumber)
         ) as number[];
-
-        const convertedArray = convertArrayToObject(percentilesToCalculate, "");
-        console.log(convertedArray);
 
         const tierTwoPercentiles = percentile(
             percentilesToCalculate,
@@ -85,10 +74,10 @@ const Graph: React.FC<GraphProps> = ({ companySalaryData, useTotalCompensation }
                     }} type="number" domain={['dataMin - 10000', 'dataMax + 10000']} />
                     <Tooltip />
                     <Legend />
-                    <Line type="monotone" dataKey="50" stroke="#E86252" />
-                    <Line type="monotone" dataKey="70" stroke="#8884d8" />
-                    <Line type="monotone" dataKey="80" stroke="#82ca9d" />
-                    <Line type="monotone" dataKey="90" stroke="#EE2677" />
+                    <Line type="monotone" dataKey="90" stroke="#EE2677" strokeWidth={strokeWidth}/>
+                    <Line type="monotone" dataKey="80" stroke="#82ca9d" strokeWidth={strokeWidth}/>
+                    <Line type="monotone" dataKey="70" stroke="#8884d8" strokeWidth={strokeWidth}/>
+                    <Line type="monotone" dataKey="50" stroke="#E86252" strokeWidth={strokeWidth}/>
                 </LineChart>
             </ResponsiveContainer>
         </>

@@ -6,7 +6,7 @@ import { CompanySalaryData } from "./interfaces/company-salary-data"
 import { SalaryDataPoint } from './interfaces/salary-data-point';
 
 interface KeywordFilter {
-    keyword: string,
+    keywords: string[],
     avoidWords: string[]
 }
 
@@ -41,7 +41,7 @@ export class DataService {
     }
 
     keywordMatch = (searchString: string, keywordFilter: KeywordFilter): boolean => {
-        return searchString.toLocaleUpperCase().includes(keywordFilter.keyword.toLocaleUpperCase())
+        return keywordFilter.keywords.map(keyword => searchString.toLocaleUpperCase().includes(keyword.toLocaleUpperCase())).includes(true)
             && keywordFilter.avoidWords.map(avoidWord => !searchString.toLocaleUpperCase().includes(avoidWord.toLocaleUpperCase()))
                 .every(Boolean)
     }
@@ -50,9 +50,8 @@ export class DataService {
         switch (seniorityLevel) {
             case SeniorityLevels.JUNIOR:
                 return {
-                    keyword: "junior", //intern, trainee
+                    keywords: ["junior", "graduate", "entry-level", "trainee"], //intern, trainee
                     avoidWords: [
-                        "senior",
                         "owner",        //relates to product owners
                         "manager",      //related to engineering managers
                         "management"    //relates to management
@@ -60,7 +59,7 @@ export class DataService {
                 }
             case SeniorityLevels.MIDLEVEL:
                 return {
-                    keyword: "",
+                    keywords: [""],
                     avoidWords: [
                         "1",
                         "new",
@@ -85,7 +84,25 @@ export class DataService {
                 }
             case SeniorityLevels.SENIOR:
                 return {
-                    keyword: "senior",
+                    keywords: ["senior"],
+                    avoidWords: [
+                        "owner",        //relates to product owners
+                        "manager",      //related to engineering managers
+                        "management"    //relates to management
+                    ]
+                }
+            case SeniorityLevels.ABOVESENIOR:
+                return {
+                    keywords: [
+                        "lead",
+                        "principal",
+                        "staff",
+                        "director",
+                        "architect",
+                        "head",
+                        "CTO",
+                        "VP"
+                    ],
                     avoidWords: [
                         "owner",        //relates to product owners
                         "manager",      //related to engineering managers
