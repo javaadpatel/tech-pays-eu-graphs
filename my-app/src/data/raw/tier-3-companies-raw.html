@@ -1,0 +1,3595 @@
+
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="/scripts/shared.js"></script>
+    
+    <title>Tier 3 Tech and Software Engineer Salaries in the Netherlands - TechPays Europe</title>
+    <meta name="description" content="The average tier 3 (top end of the market across Europe) total compensation is €154,583 for tech workers in the Netherlands based on 169 salary data points. Total compensation includes salary, bonuses and equity.">
+    <script src="/scripts/compList.js"></script>
+    <script src="/scripts/handlebars.min-v4.7.7.js"></script>
+</head>
+<body>
+    <div class="p-4 pr-10 m:p-8 l:p-12 xl:p-24 ">
+
+        <header class="max-w-4xl mx-auto">
+            <div id="headerContainer" class="relative bg-white max-h-20 overflow-hidden">
+              <div class="flex justify-between items-center max-w-7xl mx-auto px-4 py-6 sm:px-6 md:justify-start md:space-x-10 lg:px-8">
+                 <div class="flex justify-start lg:w-0 lg:flex-1">
+                   <a href="/" class="mr-4">
+                    <img class="h-8 w-auto" src="/images/techpays_logo.png" alt="TechPays">
+                  </a>
+                  <a href="/" class="text-3xl font-bold text-gray-800">
+                    Tech<span class="text-green-600">Pays</span>
+                  </a>
+                  <span class="text-xs pl-2">
+                    alpha
+                  </span>
+                </div>
+                <div class="-mr-2 -my-2 md:hidden">
+                  <button type="button" onclick="toggleMobileMenu()" class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500" aria-expanded="false">
+                    <span class="sr-only">Open menu</span>
+                    <!-- Heroicon name: outline/menu -->
+                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                  </button>
+                </div>
+                <nav class="hidden md:flex space-x-10">
+                  <div class="relative">
+                    <!-- Item active: "text-gray-900", Item inactive: "text-gray-500" -->
+                    <button type="button" onclick="toggleCountryMenu()" class="text-gray-500 group bg-white rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" aria-expanded="false">
+                      <span>Countries</span>
+                      
+                      <svg class="text-gray-400 ml-2 h-5 w-5 group-hover:text-gray-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                        <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                      </svg>
+                    </button>
+                  </div>
+                  <script>
+                    function toggleCountryMenu() {
+                        toggleDropdownVisiblity($("#countriesMenu"), null, $("#headerContainer"))  
+                        if(isDropDownVisible($("#countriesMenu"))) {
+                          $("#countriesMenu").addClass("text-gray-900")
+                          $("#countriesMenu").removeClass("text-gray-500",)
+                        } else {
+                           $("#countriesMenu").removeClass("text-gray-900")
+                          $("#countriesMenu").addClass("text-gray-500")
+                        }
+                    }
+        
+                    function toggleMobileMenu() {
+                      toggleDropdownVisiblity($("#mobile_menu_container"), $("#headerContainer"))
+                    }
+                  </script>
+        
+                    <div id="countriesMenu" class="opacity-0 translate-y-1 absolute z-10 -ml-4 mt-3 transform w-screen max-w-md lg:max-w-2xl lg:ml-0 lg:left-1/2 lg:-translate-x-1/2">
+                      <div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
+                        <div class="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8 lg:grid-cols-2">
+                          <a href="/countries/netherlands" class="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50">
+                            <div class="ml-4">
+                              <p class="text-base font-medium text-gray-500">
+                                Netherlands
+                              </p>
+                            </div>
+                          </a>
+        
+                          <a href="/countries/netherlands" class="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50">
+                            <div class="ml-4">
+                              <p class="text-base font-medium text-gray-500">
+                                More countries coming soon
+                              </p>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+        
+        
+                  <a href="https://blog.pragmaticengineer.com/software-engineering-salaries-in-the-netherlands-and-europe/" target="_blank" class="text-base font-medium text-gray-500 hover:text-gray-900">
+                    Tiers
+                  </a>
+                  <a href="/about" class="text-base font-medium text-gray-500 hover:text-gray-900">
+                    About
+                  </a>          
+                </nav>
+                <div class="hidden md:flex items-center justify-end md:flex-1 lg:w-0">          
+                  <a href="/addSalary" class="ml-8 whitespace-nowrap inline-flex items-center justify-center bg-gradient-to-r from-green-500 to-green-600 bg-origin-border px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white hover:from-green-600 hover:to-green-700">
+                    Add compensation
+                  </a>
+                </div>
+              </div>
+        
+              <!-- Mobile menu -->
+              <div id="mobile_menu_container" class="opacity-0 translate-y-1 rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden w-max m-4 p-4 ml-auto">
+                <div class="text-right">
+                   <a class="text-base font-medium text-gray-500 hover:text-gray-900 "
+                     href="/countries/netherlands" >
+                      Netherlands
+                    </a>
+                </div>
+                <div class="text-right">
+                   <a class="text-base font-medium text-gray-500 hover:text-gray-900 "
+                     href="/countries/netherlands" >
+                      (More countries coming soon)
+                    </a>
+                </div>
+                <div class="text-right">
+                  <a class="text-base font-medium text-gray-500 hover:text-gray-900"
+                    href="https://blog.pragmaticengineer.com/software-engineering-salaries-in-the-netherlands-and-europe/" target="_blank" >
+                      Tiers
+                    </a>
+                </div>
+                <div class="text-right">
+                     <a class="text-base font-medium text-gray-500 hover:text-gray-900"
+                    href="/about" >
+                      About
+                    </a> 
+                </div> 
+              </div>
+        
+            </div>
+          </header>
+        <div class="max-w-full xl:max-w-4xl lg:min-w-xl mx-auto">
+  <div>
+    <h1 class="text-lg mb-4">Tier 3 tech total compensation and salaries in the Netherlands</h1>
+  </div>    
+</div>
+
+ <div class="flex items-center justify-between max-w-6xl xl:max-w-4xl lg:min-w-xl mx-auto">
+ 
+     <div>
+         &nbsp;
+     </div>
+     
+   <!--<div class="relative inline-block text-left hidden">
+     <div class="px-2">
+         <button type="button" id="filter_job_family" class="inline-flex justify-center w-full rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-indigo-500" id="menu-button" aria-expanded="true" aria-haspopup="true">
+         Job Family
+         <svg class="-mr-1 ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+             <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+         </svg>
+         </button>
+     </div>
+ 
+     <div class="opacity-0 translate-y-1 origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 divide-y divide-gray-100 focus:outline-none" 
+     id="filter_job_familyoptions" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+         <div class="py-1" role="none">
+         <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0">Edit</a>
+         <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-1">Duplicate</a>
+         </div>
+         <div class="py-1" role="none">
+         <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-2">Archive</a>
+         <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-3">Move</a>
+         </div>
+         <div class="py-1" role="none">
+         <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-4">Share</a>
+         <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-5">Add to favorites</a>
+         </div>
+         <div class="py-1" role="none">
+         <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-6">Delete</a>
+         </div>
+     </div>
+   </div>-->
+ 
+   <div class="flex items-center flex-wrap">
+ 
+     <div class="px-2 relative mb-4">
+         <button type="button" id="filter_location" data-selected="Location"
+         class="z-10 inline-flex justify-center w-full rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-indigo-500" id="menu-button" aria-expanded="true" aria-haspopup="true">
+                 Location
+         <svg class="-mr-1 ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+             <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+         </svg>
+         </button>
+ 
+         <div class="max-h-65-screen overflow-scroll opacity-0 translate-y-1 z-negative origin-top-right absolute left-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 divide-y divide-gray-100 focus:outline-none" 
+         id="filter_location_options" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+                 <div class="py-1" role="none">
+                     <a href="/countries/netherlands/amsterdam/tier-3" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0">Amsterdam</a>
+                 </div>            
+                 <div class="py-1" role="none">
+                     <a href="/countries/netherlands/outside-amsterdam/tier-3" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0">Outside Amsterdam</a>
+                 </div>            
+                 <div class="py-1" role="none">
+                     <a href="/countries/netherlands/randstad/tier-3" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0">Randstad</a>
+                 </div>            
+                 <div class="py-1" role="none">
+                     <a href="/countries/netherlands/almere/tier-3" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0">Almere</a>
+                 </div>            
+                 <div class="py-1" role="none">
+                     <a href="/countries/netherlands/delft/tier-3" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0">Delft</a>
+                 </div>            
+                 <div class="py-1" role="none">
+                     <a href="/countries/netherlands/deventer/tier-3" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0">Deventer</a>
+                 </div>            
+                 <div class="py-1" role="none">
+                     <a href="/countries/netherlands/eindhoven/tier-3" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0">Eindhoven</a>
+                 </div>            
+                 <div class="py-1" role="none">
+                     <a href="/countries/netherlands/enschede/tier-3" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0">Enschede</a>
+                 </div>            
+                 <div class="py-1" role="none">
+                     <a href="/countries/netherlands/groningen/tier-3" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0">Groningen</a>
+                 </div>            
+                 <div class="py-1" role="none">
+                     <a href="/countries/netherlands/heerlen-limburg/tier-3" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0">Heerlen, Limburg</a>
+                 </div>            
+                 <div class="py-1" role="none">
+                     <a href="/countries/netherlands/hoofddorp/tier-3" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0">Hoofddorp</a>
+                 </div>            
+                 <div class="py-1" role="none">
+                     <a href="/countries/netherlands/remote/tier-3" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0">Remote</a>
+                 </div>            
+                 <div class="py-1" role="none">
+                     <a href="/countries/netherlands/rotterdam/tier-3" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0">Rotterdam</a>
+                 </div>            
+                 <div class="py-1" role="none">
+                     <a href="/countries/netherlands/s-hertogenbosch-north-brabant/tier-3" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0">s-Hertogenbosch, North Brabant</a>
+                 </div>            
+                 <div class="py-1" role="none">
+                     <a href="/countries/netherlands/the-hague/tier-3" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0">The Hague</a>
+                 </div>            
+                 <div class="py-1" role="none">
+                     <a href="/countries/netherlands/utrecht/tier-3" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0">Utrecht</a>
+                 </div>            
+                 <div class="py-1" role="none">
+                     <a href="/countries/netherlands/veenendaal/tier-3" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0">Veenendaal</a>
+                 </div>            
+                 <div class="py-1" role="none">
+                     <a href="/countries/netherlands/tier-3" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0">All</a>
+                 </div>            
+         </div>
+ 
+     </div>
+   
+ 
+     <div class="px-2 relative mb-4">
+         <button type="button" id="filter_seniority" data-selected="Seniority"
+         class="z-10 inline-flex justify-center w-full rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-indigo-500" id="menu-button" aria-expanded="true" aria-haspopup="true">
+                 Seniority
+         <svg class="-mr-1 ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+             <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+         </svg>
+         </button>
+ 
+         <div class="opacity-0 translate-y-1 z-negative origin-top-right absolute left-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 divide-y divide-gray-100 focus:outline-none" 
+         id="filter_seniority_options" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+                 <div class="py-1" role="none">
+                     <a href="/countries/netherlands/intern-level/tier-3" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0">Intern</a>
+                 </div>            
+                 <div class="py-1" role="none">
+                     <a href="/countries/netherlands/entry-level/tier-3" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0">Entry-level</a>
+                 </div>            
+                 <div class="py-1" role="none">
+                     <a href="/countries/netherlands/mid-level/tier-3" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0">Mid-level</a>
+                 </div>            
+                 <div class="py-1" role="none">
+                     <a href="/countries/netherlands/senior/tier-3" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0">Senior</a>
+                 </div>            
+                 <div class="py-1" role="none">
+                     <a href="/countries/netherlands/above-senior/tier-3" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0">Above senior-level</a>
+                 </div>            
+                 <div class="py-1" role="none">
+                     <a href="/countries/netherlands/executive/tier-3" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0">Executive</a>
+                 </div>            
+                 <div class="py-1" role="none">
+                     <a href="/countries/netherlands/tier-3" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0">All</a>
+                 </div>            
+         </div>
+ 
+     </div>
+ 
+     <!--<div class="px-2 hidden">
+         <button type="button" id="filter_location" class="inline-flex justify-center w-full rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-indigo-500" id="menu-button" aria-expanded="true" aria-haspopup="true">
+         Location
+         <svg class="-mr-1 ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+             <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+         </svg>
+         </button>
+     </div>-->
+ 
+     <div class="px-2 relative mb-4">
+         <button type="button" id="filter_tier" data-selected="Tier"
+         class="inline-flex justify-center w-full rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-indigo-500" id="menu-button" aria-expanded="true" aria-haspopup="true">
+         <span class="title">
+                 Tier 3
+         </span>       
+         <svg class="-mr-1 ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+             <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+         </svg>
+         </button>
+ 
+         <div class="opacity-0 translate-y-1 z-negative origin-top-right absolute left-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 divide-y divide-gray-100 focus:outline-none" 
+         id="filter_tier_options" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+                 <div class="py-1" role="none">
+                     <a href="/countries/netherlands/tier-1" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0" >Tier 1 (competing (hyper)locally)</a>
+                 </div>            
+                 <div class="py-1" role="none">
+                     <a href="/countries/netherlands/tier-2" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0" >Tier 2 (top end of the market across the country)</a>
+                 </div>            
+                 <div class="py-1" role="none">
+                     <a href="/countries/netherlands/tier-3" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0" >Tier 3 (top end of the market across Europe)</a>
+                 </div>            
+                 <div class="py-1" role="none">
+                     <a href="/countries/netherlands/contract" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0" >Contract/freelance</a>
+                 </div>            
+                 <div class="py-1" role="none">
+                     <a href="/countries/netherlands" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0" >All</a>
+                 </div>            
+                 <div class="py-1" role="none">
+                     <a href="https://blog.pragmaticengineer.com/software-engineering-salaries-in-the-netherlands-and-europe/#tiers-of-companies" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0"  target='_blank' >What are Tiers?</a>
+                 </div>            
+         </div>
+     </div>
+ 
+     <div class="px-2 relative mb-4">
+         <button type="button" id="filter_company" data-selected="Company"
+         class="inline-flex justify-center w-full rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-indigo-500" id="menu-button" aria-expanded="true" aria-haspopup="true">
+         <span class="title">
+                     Company
+             </span> 
+         <svg class="-mr-1 ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+             <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+         </svg>
+         </button>
+ 
+         <div class="max-h-65-screen overflow-scroll opacity-0 translate-y-1 z-negative origin-top-right absolute left-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 divide-y divide-gray-100 focus:outline-none" 
+         id="filter_company_options" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+                 <div class="py-1" role="none">
+                     <a href="/countries/netherlands/abn-amro/tier-3" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0" >ABN Amro</a>
+                 </div>            
+                 <div class="py-1" role="none">
+                     <a href="/countries/netherlands/abn-amro/tier-3" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0" >ABN AMRO</a>
+                 </div>            
+                 <div class="py-1" role="none">
+                     <a href="/countries/netherlands/adyen/tier-3" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0" >Adyen</a>
+                 </div>            
+                 <div class="py-1" role="none">
+                     <a href="/countries/netherlands/albelli/tier-3" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0" >albelli</a>
+                 </div>            
+                 <div class="py-1" role="none">
+                     <a href="/countries/netherlands/amazon/tier-3" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0" >Amazon</a>
+                 </div>            
+                 <div class="py-1" role="none">
+                     <a href="/countries/netherlands/asml/tier-3" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0" >ASML</a>
+                 </div>            
+                 <div class="py-1" role="none">
+                     <a href="/countries/netherlands/backbase/tier-3" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0" >Backbase</a>
+                 </div>            
+                 <div class="py-1" role="none">
+                     <a href="/countries/netherlands/blendle/tier-3" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0" >Blendle</a>
+                 </div>            
+                 <div class="py-1" role="none">
+                     <a href="/countries/netherlands/bol-com/tier-3" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0" >Bol.com</a>
+                 </div>            
+                 <div class="py-1" role="none">
+                     <a href="/countries/netherlands/booking-com/tier-3" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0" >Booking.com</a>
+                 </div>            
+                 <div class="py-1" role="none">
+                     <a href="/countries/netherlands/bunq/tier-3" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0" >Bunq</a>
+                 </div>            
+                 <div class="py-1" role="none">
+                     <a href="/countries/netherlands/bux/tier-3" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0" >BUX</a>
+                 </div>            
+                 <div class="py-1" role="none">
+                     <a href="/countries/netherlands/carnext-com/tier-3" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0" >CarNext.com</a>
+                 </div>            
+                 <div class="py-1" role="none">
+                     <a href="/countries/netherlands/catawiki/tier-3" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0" >Catawiki</a>
+                 </div>            
+                 <div class="py-1" role="none">
+                     <a href="/countries/netherlands/coolblue/tier-3" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0" >Coolblue</a>
+                 </div>            
+                 <div class="py-1" role="none">
+                     <a href="/countries/netherlands/databricks/tier-3" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0" >Databricks</a>
+                 </div>            
+                 <div class="py-1" role="none">
+                     <a href="/countries/netherlands/dazn/tier-3" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0" >DAZN</a>
+                 </div>            
+                 <div class="py-1" role="none">
+                     <a href="/countries/netherlands/dott/tier-3" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0" >Dott</a>
+                 </div>            
+                 <div class="py-1" role="none">
+                     <a href="/countries/netherlands/dtn/tier-3" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0" >DTN</a>
+                 </div>            
+                 <div class="py-1" role="none">
+                     <a href="/countries/netherlands/ebay/tier-3" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0" >eBay</a>
+                 </div>            
+                 <div class="py-1" role="none">
+                     <a href="/countries/netherlands/eclecticiq/tier-3" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0" >EclecticIQ</a>
+                 </div>            
+                 <div class="py-1" role="none">
+                     <a href="/countries/netherlands/elastic/tier-3" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0" >Elastic</a>
+                 </div>            
+                 <div class="py-1" role="none">
+                     <a href="/countries/netherlands/elsevier/tier-3" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0" >Elsevier</a>
+                 </div>            
+                 <div class="py-1" role="none">
+                     <a href="/countries/netherlands/essent/tier-3" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0" >Essent</a>
+                 </div>            
+                 <div class="py-1" role="none">
+                     <a href="/countries/netherlands/flow-traders/tier-3" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0" >Flow Traders</a>
+                 </div>            
+                 <div class="py-1" role="none">
+                     <a href="/countries/netherlands/github/tier-3" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0" >GitHub</a>
+                 </div>            
+                 <div class="py-1" role="none">
+                     <a href="/countries/netherlands/gitlab/tier-3" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0" >GitLab</a>
+                 </div>            
+                 <div class="py-1" role="none">
+                     <a href="/countries/netherlands/hiber/tier-3" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0" >Hiber</a>
+                 </div>            
+                 <div class="py-1" role="none">
+                     <a href="/countries/netherlands/hoppinger/tier-3" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0" >Hoppinger</a>
+                 </div>            
+                 <div class="py-1" role="none">
+                     <a href="/countries/netherlands/ikea/tier-3" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0" >IKEA</a>
+                 </div>            
+                 <div class="py-1" role="none">
+                     <a href="/countries/netherlands/imc-trading/tier-3" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0" >IMC Trading</a>
+                 </div>            
+                 <div class="py-1" role="none">
+                     <a href="/countries/netherlands/ing/tier-3" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0" >ING</a>
+                 </div>            
+                 <div class="py-1" role="none">
+                     <a href="/countries/netherlands/just-eat-takeaway-com/tier-3" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0" >Just Eat Takeaway.com</a>
+                 </div>            
+                 <div class="py-1" role="none">
+                     <a href="/countries/netherlands/kpn/tier-3" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0" >KPN</a>
+                 </div>            
+                 <div class="py-1" role="none">
+                     <a href="/countries/netherlands/mendix/tier-3" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0" >Mendix</a>
+                 </div>            
+                 <div class="py-1" role="none">
+                     <a href="/countries/netherlands/messagebird/tier-3" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0" >MessageBird</a>
+                 </div>            
+                 <div class="py-1" role="none">
+                     <a href="/countries/netherlands/miro/tier-3" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0" >Miro</a>
+                 </div>            
+                 <div class="py-1" role="none">
+                     <a href="/countries/netherlands/mobiquity/tier-3" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0" >Mobiquity</a>
+                 </div>            
+                 <div class="py-1" role="none">
+                     <a href="/countries/netherlands/newmotion/tier-3" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0" >NewMotion</a>
+                 </div>            
+                 <div class="py-1" role="none">
+                     <a href="/countries/netherlands/nike/tier-3" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0" >Nike</a>
+                 </div>            
+                 <div class="py-1" role="none">
+                     <a href="/countries/netherlands/optiver/tier-3" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0" >Optiver</a>
+                 </div>            
+                 <div class="py-1" role="none">
+                     <a href="/countries/netherlands/picnic/tier-3" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0" >Picnic</a>
+                 </div>            
+                 <div class="py-1" role="none">
+                     <a href="/countries/netherlands/postnl/tier-3" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0" >PostNL</a>
+                 </div>            
+                 <div class="py-1" role="none">
+                     <a href="/countries/netherlands/rabobank/tier-3" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0" >Rabobank</a>
+                 </div>            
+                 <div class="py-1" role="none">
+                     <a href="/countries/netherlands/schuberg-philis/tier-3" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0" >Schuberg Philis</a>
+                 </div>            
+                 <div class="py-1" role="none">
+                     <a href="/countries/netherlands/spotify/tier-3" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0" >Spotify</a>
+                 </div>            
+                 <div class="py-1" role="none">
+                     <a href="/countries/netherlands/tiqets/tier-3" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0" >Tiqets</a>
+                 </div>            
+                 <div class="py-1" role="none">
+                     <a href="/countries/netherlands/tomtom/tier-3" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0" >TomTom</a>
+                 </div>            
+                 <div class="py-1" role="none">
+                     <a href="/countries/netherlands/travix/tier-3" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0" >Travix</a>
+                 </div>            
+                 <div class="py-1" role="none">
+                     <a href="/countries/netherlands/uber/tier-3" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0" >Uber</a>
+                 </div>            
+                 <div class="py-1" role="none">
+                     <a href="/countries/netherlands/werkspot/tier-3" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0" >Werkspot</a>
+                 </div>            
+                 <div class="py-1" role="none">
+                     <a href="/countries/netherlands/tier-3" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0" >All</a>
+                 </div>            
+         </div>
+ 
+     </div>
+   </div>
+ </div>
+<div class="flex flex-col">
+     
+    <div class="shadow overflow-hidden border-b border-gray-200 sm:rounded-lg mt-4 mx-auto">
+      <table class="divide-y divide-gray-200 max-w-full xl:max-w-4xl lg:min-w-xl table-fixed sm:table-auto">
+        <thead class="bg-gray-50">
+          <tr>
+            <th scope="col" class="w-1/3 sm:w-max px-3 py-1 sm:px-6 sm:py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+              Company
+            </th>
+            <th scope="col" class="w-1/3 sm:w-max px-3 py-1 sm:px-6 sm:py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+              Title
+            </th>                
+            <th scope="col" id="sort_total_comp" class="w-1/3 sm:w-max sortContainer px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+              <a href='#' onClick="sortTotalCompensation()">
+                <span class="block sm:hidden">
+                  Total Comp
+                </span>
+                <span class="hidden sm:block">
+                  Total Compensation
+                </span>
+                 <span class="sort_up">▲</span><span class="sort_down">▼</span>
+              </a>
+              
+            </th>
+            <th scope="col" id="sort_salary" class="sortContainer hidden sm:table-cell px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+            <a href='#' onClick="sortSalary()">
+              Salary <span class="sort_up">▲</span><span class="sort_down">▼</span>
+            </a>
+            </th>
+            <th scope="col" class="hidden sm:table-cell px-6 py-3 text-left text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+              Details
+            </th>            
+          </tr>
+        </thead>
+        <tbody class="bg-white divide-y divide-gray-200" id="compensation_list_body">
+
+
+            <tr id="row_oakvkx94htkgyhboaamzh" onclick="showDetails('oakvkx94htkgyhboaamzh')" class="text-xs sm:text-sm">
+              <td class="px-3 py-1 sm:px-6 sm:py-4 font-medium text-gray-900">
+                  
+                <div class="text-gray-900">Booking.com</div>
+                <div class="text-gray-500 font-light">Amsterdam</div>
+              </td>               
+              <td class="px-3 py-1 sm:px-6 sm:py-4 sm:whitespace-nowrap">
+                <div class="text-gray-900">Principal Developer</div>
+                <div class="text-gray-500"></div>
+              </td>                  
+              <td class="px-3 py-1 sm:px-6 sm:py-4 whitespace-nowrap font-medium text-gray-900">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-500 text-white">
+                      €206,000
+                    </span>
+
+                      <span class="px-2 inline-flex text-xs leading-5 font-normal rounded-full bg-gray-200 text-gray-600">
+                        2020
+                      </span>
+              </td>
+              <td class="hidden sm:table-cell px-6 py-4 whitespace-nowrap">
+                  <div class="text-sm text-gray-900">€10,961/month</div>
+              </td>
+              <td class="hidden sm:table-cell px-6 py-4 whitespace-nowrap text-sm font-light">
+                  <div class="text-sm text-gray-900">€132K salary, €34K bonus, €40K equity/year 
+                      <a class="underline">Details</a>
+                  </div>
+              </td>
+            </tr>
+
+            <tr id="row_nskww8lizlfzmg7lip3lg" onclick="showDetails('nskww8lizlfzmg7lip3lg')" class="text-xs sm:text-sm">
+              <td class="px-3 py-1 sm:px-6 sm:py-4 font-medium text-gray-900">
+                  
+                <div class="text-gray-900">Optiver</div>
+                <div class="text-gray-500 font-light">Amsterdam (flexible days)</div>
+              </td>               
+              <td class="px-3 py-1 sm:px-6 sm:py-4 sm:whitespace-nowrap">
+                <div class="text-gray-900">Graduate Software Engineer</div>
+                <div class="text-gray-500"></div>
+              </td>                  
+              <td class="px-3 py-1 sm:px-6 sm:py-4 whitespace-nowrap font-medium text-gray-900">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-500 text-white">
+                      €125,000
+                    </span>
+
+              </td>
+              <td class="hidden sm:table-cell px-6 py-4 whitespace-nowrap">
+                  <div class="text-sm text-gray-900">€6,250/month</div>
+              </td>
+              <td class="hidden sm:table-cell px-6 py-4 whitespace-nowrap text-sm font-light">
+                  <div class="text-sm text-gray-900">€75K salary, €0K bonus, €50K sign-on, €5K benefits, €8K relocation 
+                      <a class="underline">Details</a>
+                  </div>
+              </td>
+            </tr>
+
+            <tr id="row_efkwj5nw7fi8t1dhixlbg" onclick="showDetails('efkwj5nw7fi8t1dhixlbg')" class="text-xs sm:text-sm">
+              <td class="px-3 py-1 sm:px-6 sm:py-4 font-medium text-gray-900">
+                  
+                <div class="text-gray-900">Booking.com</div>
+                <div class="text-gray-500 font-light">Flexible days</div>
+              </td>               
+              <td class="px-3 py-1 sm:px-6 sm:py-4 sm:whitespace-nowrap">
+                <div class="text-gray-900">Engineering Manager</div>
+                <div class="text-gray-500"></div>
+              </td>                  
+              <td class="px-3 py-1 sm:px-6 sm:py-4 whitespace-nowrap font-medium text-gray-900">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-500 text-white">
+                      €155,000
+                    </span>
+
+              </td>
+              <td class="hidden sm:table-cell px-6 py-4 whitespace-nowrap">
+                  <div class="text-sm text-gray-900">€10,000/month</div>
+              </td>
+              <td class="hidden sm:table-cell px-6 py-4 whitespace-nowrap text-sm font-light">
+                  <div class="text-sm text-gray-900">€120K salary, €24K bonus, €11K equity/year 
+                      <a class="underline">Details</a>
+                  </div>
+              </td>
+            </tr>
+
+            <tr id="row_ozkwnry796j3pqtxvf3zr" onclick="showDetails('ozkwnry796j3pqtxvf3zr')" class="text-xs sm:text-sm">
+              <td class="px-3 py-1 sm:px-6 sm:py-4 font-medium text-gray-900">
+                  
+                <div class="text-gray-900">Booking.com</div>
+                <div class="text-gray-500 font-light">Amsterdam</div>
+              </td>               
+              <td class="px-3 py-1 sm:px-6 sm:py-4 sm:whitespace-nowrap">
+                <div class="text-gray-900">Senior Machine Learning Engineer</div>
+                <div class="text-gray-500"></div>
+              </td>                  
+              <td class="px-3 py-1 sm:px-6 sm:py-4 whitespace-nowrap font-medium text-gray-900">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-500 text-white">
+                      €156,000
+                    </span>
+
+              </td>
+              <td class="hidden sm:table-cell px-6 py-4 whitespace-nowrap">
+                  <div class="text-sm text-gray-900">€9,875/month</div>
+              </td>
+              <td class="hidden sm:table-cell px-6 py-4 whitespace-nowrap text-sm font-light">
+                  <div class="text-sm text-gray-900">€119K salary, €24K bonus, €13K equity/year, €2K benefits 
+                      <a class="underline">Details</a>
+                  </div>
+              </td>
+            </tr>
+
+            <tr id="row_8hkwkg3hibnc51q4psxs" onclick="showDetails('8hkwkg3hibnc51q4psxs')" class="text-xs sm:text-sm">
+              <td class="px-3 py-1 sm:px-6 sm:py-4 font-medium text-gray-900">
+                  
+                <div class="text-gray-900">Booking.com</div>
+                <div class="text-gray-500 font-light">Amsterdam</div>
+              </td>               
+              <td class="px-3 py-1 sm:px-6 sm:py-4 sm:whitespace-nowrap">
+                <div class="text-gray-900">Senior Software Engineer</div>
+                <div class="text-gray-500"></div>
+              </td>                  
+              <td class="px-3 py-1 sm:px-6 sm:py-4 whitespace-nowrap font-medium text-gray-900">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-500 text-white">
+                      €143,000
+                    </span>
+
+              </td>
+              <td class="hidden sm:table-cell px-6 py-4 whitespace-nowrap">
+                  <div class="text-sm text-gray-900">€9,167/month</div>
+              </td>
+              <td class="hidden sm:table-cell px-6 py-4 whitespace-nowrap text-sm font-light">
+                  <div class="text-sm text-gray-900">€110K salary, €22K bonus, €11K equity/year 
+                      <a class="underline">Details</a>
+                  </div>
+              </td>
+            </tr>
+
+            <tr id="row_6okvtkkg3llv69xq8w9dp" onclick="showDetails('6okvtkkg3llv69xq8w9dp')" class="text-xs sm:text-sm">
+              <td class="px-3 py-1 sm:px-6 sm:py-4 font-medium text-gray-900">
+                  
+                <div class="text-gray-900">Uber</div>
+                <div class="text-gray-500 font-light">Amsterdam</div>
+              </td>               
+              <td class="px-3 py-1 sm:px-6 sm:py-4 sm:whitespace-nowrap">
+                <div class="text-gray-900">Software Engineer</div>
+                <div class="text-gray-500"></div>
+              </td>                  
+              <td class="px-3 py-1 sm:px-6 sm:py-4 whitespace-nowrap font-medium text-gray-900">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-500 text-white">
+                      €151,000
+                    </span>
+
+              </td>
+              <td class="hidden sm:table-cell px-6 py-4 whitespace-nowrap">
+                  <div class="text-sm text-gray-900">€8,113/month</div>
+              </td>
+              <td class="hidden sm:table-cell px-6 py-4 whitespace-nowrap text-sm font-light">
+                  <div class="text-sm text-gray-900">€97K salary, €14K bonus, €41K equity/year 
+                      <a class="underline">Details</a>
+                  </div>
+              </td>
+            </tr>
+
+            <tr id="row_ltksoiuzlzpsvwkeec4mt" onclick="showDetails('ltksoiuzlzpsvwkeec4mt')" class="text-xs sm:text-sm">
+              <td class="px-3 py-1 sm:px-6 sm:py-4 font-medium text-gray-900">
+                  
+                <div class="text-gray-900">Booking.com </div>
+                <div class="text-gray-500 font-light"></div>
+              </td>               
+              <td class="px-3 py-1 sm:px-6 sm:py-4 sm:whitespace-nowrap">
+                <div class="text-gray-900">Senior Data Scientist </div>
+                <div class="text-gray-500"></div>
+              </td>                  
+              <td class="px-3 py-1 sm:px-6 sm:py-4 whitespace-nowrap font-medium text-gray-900">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-500 text-white">
+                      €136,000
+                    </span>
+
+              </td>
+              <td class="hidden sm:table-cell px-6 py-4 whitespace-nowrap">
+                  <div class="text-sm text-gray-900">€8,667/month</div>
+              </td>
+              <td class="hidden sm:table-cell px-6 py-4 whitespace-nowrap text-sm font-light">
+                  <div class="text-sm text-gray-900">€104K salary, €21K bonus, €11K equity/year 
+                      <a class="underline">Details</a>
+                  </div>
+              </td>
+            </tr>
+
+            <tr id="row_x5kutkg756de5jm9a4tsd" onclick="showDetails('x5kutkg756de5jm9a4tsd')" class="text-xs sm:text-sm">
+              <td class="px-3 py-1 sm:px-6 sm:py-4 font-medium text-gray-900">
+                  
+                <div class="text-gray-900">🔒 Data company pre-ipo</div>
+                <div class="text-gray-500 font-light">Remote from anywhere</div>
+              </td>               
+              <td class="px-3 py-1 sm:px-6 sm:py-4 sm:whitespace-nowrap">
+                <div class="text-gray-900">Senior Solutions Architect</div>
+                <div class="text-gray-500"></div>
+              </td>                  
+              <td class="px-3 py-1 sm:px-6 sm:py-4 whitespace-nowrap font-medium text-gray-900">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-500 text-white">
+                      €217,000
+                    </span>
+
+                      <span class="px-2 inline-flex text-xs leading-5 font-normal rounded-full bg-gray-200 text-gray-600">
+                        Freelance
+                      </span>
+              </td>
+              <td class="hidden sm:table-cell px-6 py-4 whitespace-nowrap">
+                  <div class="text-sm text-gray-900">€12,667/month</div>
+              </td>
+              <td class="hidden sm:table-cell px-6 py-4 whitespace-nowrap text-sm font-light">
+                  <div class="text-sm text-gray-900">€152K salary, €25K bonus, €40K equity/year, €5K benefits 
+                      <a class="underline">Details</a>
+                  </div>
+              </td>
+            </tr>
+
+            <tr id="row_0lkwx78bygwx2ifsixdvf" onclick="showDetails('0lkwx78bygwx2ifsixdvf')" class="text-xs sm:text-sm">
+              <td class="px-3 py-1 sm:px-6 sm:py-4 font-medium text-gray-900">
+                  
+                <div class="text-gray-900">🔒 FinTech company</div>
+                <div class="text-gray-500 font-light">Remote within country</div>
+              </td>               
+              <td class="px-3 py-1 sm:px-6 sm:py-4 sm:whitespace-nowrap">
+                <div class="text-gray-900">Staff Software Engineer</div>
+                <div class="text-gray-500"></div>
+              </td>                  
+              <td class="px-3 py-1 sm:px-6 sm:py-4 whitespace-nowrap font-medium text-gray-900">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-500 text-white">
+                      €434,000
+                    </span>
+
+              </td>
+              <td class="hidden sm:table-cell px-6 py-4 whitespace-nowrap">
+                  <div class="text-sm text-gray-900">€12,750/month</div>
+              </td>
+              <td class="hidden sm:table-cell px-6 py-4 whitespace-nowrap text-sm font-light">
+                  <div class="text-sm text-gray-900">€153K salary, €31K bonus, €50K sign-on, €200K equity/year 
+                      <a class="underline">Details</a>
+                  </div>
+              </td>
+            </tr>
+
+            <tr id="row_y7kwx7oaleigs8aj06y2i" onclick="showDetails('y7kwx7oaleigs8aj06y2i')" class="text-xs sm:text-sm">
+              <td class="px-3 py-1 sm:px-6 sm:py-4 font-medium text-gray-900">
+                  
+                <div class="text-gray-900">🔒 Travel industry</div>
+                <div class="text-gray-500 font-light">Amsterdam</div>
+              </td>               
+              <td class="px-3 py-1 sm:px-6 sm:py-4 sm:whitespace-nowrap">
+                <div class="text-gray-900">Engineering Lead</div>
+                <div class="text-gray-500"></div>
+              </td>                  
+              <td class="px-3 py-1 sm:px-6 sm:py-4 whitespace-nowrap font-medium text-gray-900">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-500 text-white">
+                      €455,000
+                    </span>
+
+              </td>
+              <td class="hidden sm:table-cell px-6 py-4 whitespace-nowrap">
+                  <div class="text-sm text-gray-900">€10,833/month</div>
+              </td>
+              <td class="hidden sm:table-cell px-6 py-4 whitespace-nowrap text-sm font-light">
+                  <div class="text-sm text-gray-900">€130K salary, €325K equity/year, €6K benefits 
+                      <a class="underline">Details</a>
+                  </div>
+              </td>
+            </tr>
+
+            <tr id="row_g3kwyx9zfg9wx1haq88ra" onclick="showDetails('g3kwyx9zfg9wx1haq88ra')" class="text-xs sm:text-sm">
+              <td class="px-3 py-1 sm:px-6 sm:py-4 font-medium text-gray-900">
+                  
+                <div class="text-gray-900">Optiver </div>
+                <div class="text-gray-500 font-light">Amsterdam Zuid</div>
+              </td>               
+              <td class="px-3 py-1 sm:px-6 sm:py-4 sm:whitespace-nowrap">
+                <div class="text-gray-900">Software Engineer Intern </div>
+                <div class="text-gray-500"></div>
+              </td>                  
+              <td class="px-3 py-1 sm:px-6 sm:py-4 whitespace-nowrap font-medium text-gray-900">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-500 text-white">
+                      €120,000
+                    </span>
+
+              </td>
+              <td class="hidden sm:table-cell px-6 py-4 whitespace-nowrap">
+                  <div class="text-sm text-gray-900">€10,000/month</div>
+              </td>
+              <td class="hidden sm:table-cell px-6 py-4 whitespace-nowrap text-sm font-light">
+                  <div class="text-sm text-gray-900"> 
+                      <a class="underline">Details</a>
+                  </div>
+              </td>
+            </tr>
+
+            <tr id="row_p5kwgfplmq2wnjrfm5o0m" onclick="showDetails('p5kwgfplmq2wnjrfm5o0m')" class="text-xs sm:text-sm">
+              <td class="px-3 py-1 sm:px-6 sm:py-4 font-medium text-gray-900">
+                  
+                <div class="text-gray-900">Optiver </div>
+                <div class="text-gray-500 font-light">Amsterdam</div>
+              </td>               
+              <td class="px-3 py-1 sm:px-6 sm:py-4 sm:whitespace-nowrap">
+                <div class="text-gray-900">Software Engineer Intern</div>
+                <div class="text-gray-500"></div>
+              </td>                  
+              <td class="px-3 py-1 sm:px-6 sm:py-4 whitespace-nowrap font-medium text-gray-900">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-500 text-white">
+                      €130,000
+                    </span>
+
+              </td>
+              <td class="hidden sm:table-cell px-6 py-4 whitespace-nowrap">
+                  <div class="text-sm text-gray-900">€10,800/month</div>
+              </td>
+              <td class="hidden sm:table-cell px-6 py-4 whitespace-nowrap text-sm font-light">
+                  <div class="text-sm text-gray-900"> 
+                      <a class="underline">Details</a>
+                  </div>
+              </td>
+            </tr>
+
+            <tr id="row_60kvkuo9syftry7je3yjh" onclick="showDetails('60kvkuo9syftry7je3yjh')" class="text-xs sm:text-sm">
+              <td class="px-3 py-1 sm:px-6 sm:py-4 font-medium text-gray-900">
+                  
+                <div class="text-gray-900">Elastic</div>
+                <div class="text-gray-500 font-light">Amsterdam (hybrid option)</div>
+              </td>               
+              <td class="px-3 py-1 sm:px-6 sm:py-4 sm:whitespace-nowrap">
+                <div class="text-gray-900">Senior Software Engineer</div>
+                <div class="text-gray-500"></div>
+              </td>                  
+              <td class="px-3 py-1 sm:px-6 sm:py-4 whitespace-nowrap font-medium text-gray-900">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-500 text-white">
+                      €139,000
+                    </span>
+
+              </td>
+              <td class="hidden sm:table-cell px-6 py-4 whitespace-nowrap">
+                  <div class="text-sm text-gray-900">€9,000/month</div>
+              </td>
+              <td class="hidden sm:table-cell px-6 py-4 whitespace-nowrap text-sm font-light">
+                  <div class="text-sm text-gray-900">€108K salary, €8K sign-on, €23K equity/year, €15K benefits 
+                      <a class="underline">Details</a>
+                  </div>
+              </td>
+            </tr>
+
+            <tr id="row_klkw6mxytweziba873mbm" onclick="showDetails('klkw6mxytweziba873mbm')" class="text-xs sm:text-sm">
+              <td class="px-3 py-1 sm:px-6 sm:py-4 font-medium text-gray-900">
+                  
+                <div class="text-gray-900">IMC Trading</div>
+                <div class="text-gray-500 font-light">Amsterdam</div>
+              </td>               
+              <td class="px-3 py-1 sm:px-6 sm:py-4 sm:whitespace-nowrap">
+                <div class="text-gray-900">Graduate Software Engineer</div>
+                <div class="text-gray-500"></div>
+              </td>                  
+              <td class="px-3 py-1 sm:px-6 sm:py-4 whitespace-nowrap font-medium text-gray-900">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-500 text-white">
+                      €165,000
+                    </span>
+
+              </td>
+              <td class="hidden sm:table-cell px-6 py-4 whitespace-nowrap">
+                  <div class="text-sm text-gray-900">€8,333/month</div>
+              </td>
+              <td class="hidden sm:table-cell px-6 py-4 whitespace-nowrap text-sm font-light">
+                  <div class="text-sm text-gray-900">€100K salary, €35K bonus, €30K sign-on, €3K relocation 
+                      <a class="underline">Details</a>
+                  </div>
+              </td>
+            </tr>
+
+            <tr id="row_fqkwxy2aeyi5880qs2qc" onclick="showDetails('fqkwxy2aeyi5880qs2qc')" class="text-xs sm:text-sm">
+              <td class="px-3 py-1 sm:px-6 sm:py-4 font-medium text-gray-900">
+                  
+                <div class="text-gray-900">Spotify</div>
+                <div class="text-gray-500 font-light">Amsterdam (hybrid option)</div>
+              </td>               
+              <td class="px-3 py-1 sm:px-6 sm:py-4 sm:whitespace-nowrap">
+                <div class="text-gray-900">Senior Data Engineer</div>
+                <div class="text-gray-500"></div>
+              </td>                  
+              <td class="px-3 py-1 sm:px-6 sm:py-4 whitespace-nowrap font-medium text-gray-900">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-500 text-white">
+                      €137,000
+                    </span>
+
+              </td>
+              <td class="hidden sm:table-cell px-6 py-4 whitespace-nowrap">
+                  <div class="text-sm text-gray-900">€8,917/month</div>
+              </td>
+              <td class="hidden sm:table-cell px-6 py-4 whitespace-nowrap text-sm font-light">
+                  <div class="text-sm text-gray-900">€107K salary, €30K equity/year 
+                      <a class="underline">Details</a>
+                  </div>
+              </td>
+            </tr>
+
+            <tr id="row_fkkt8ccunr24zei6hlcs8" onclick="showDetails('fkkt8ccunr24zei6hlcs8')" class="text-xs sm:text-sm">
+              <td class="px-3 py-1 sm:px-6 sm:py-4 font-medium text-gray-900">
+                  
+                <div class="text-gray-900">Microsoft </div>
+                <div class="text-gray-500 font-light">Amsterdam (remote within country)</div>
+              </td>               
+              <td class="px-3 py-1 sm:px-6 sm:py-4 sm:whitespace-nowrap">
+                <div class="text-gray-900">🔒 Senior-level position within software engineering</div>
+                <div class="text-gray-500"></div>
+              </td>                  
+              <td class="px-3 py-1 sm:px-6 sm:py-4 whitespace-nowrap font-medium text-gray-900">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-500 text-white">
+                      €154,000
+                    </span>
+
+              </td>
+              <td class="hidden sm:table-cell px-6 py-4 whitespace-nowrap">
+                  <div class="text-sm text-gray-900">€9,950/month</div>
+              </td>
+              <td class="hidden sm:table-cell px-6 py-4 whitespace-nowrap text-sm font-light">
+                  <div class="text-sm text-gray-900">€119K salary, €30K bonus, €5K equity/year, €30K benefits 
+                      <a class="underline">Details</a>
+                  </div>
+              </td>
+            </tr>
+
+            <tr id="row_kwkwwa4i2zhqo23784tr" onclick="showDetails('kwkwwa4i2zhqo23784tr')" class="text-xs sm:text-sm">
+              <td class="px-3 py-1 sm:px-6 sm:py-4 font-medium text-gray-900">
+                  
+                <div class="text-gray-900">Stripe</div>
+                <div class="text-gray-500 font-light">Flexible days</div>
+              </td>               
+              <td class="px-3 py-1 sm:px-6 sm:py-4 sm:whitespace-nowrap">
+                <div class="text-gray-900">Solution Architect</div>
+                <div class="text-gray-500"></div>
+              </td>                  
+              <td class="px-3 py-1 sm:px-6 sm:py-4 whitespace-nowrap font-medium text-gray-900">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-500 text-white">
+                      €200,000
+                    </span>
+
+              </td>
+              <td class="hidden sm:table-cell px-6 py-4 whitespace-nowrap">
+                  <div class="text-sm text-gray-900">€9,531/month</div>
+              </td>
+              <td class="hidden sm:table-cell px-6 py-4 whitespace-nowrap text-sm font-light">
+                  <div class="text-sm text-gray-900">€114K salary, €29K bonus, €0K sign-on, €58K equity/year, €10K benefits 
+                      <a class="underline">Details</a>
+                  </div>
+              </td>
+            </tr>
+
+            <tr id="row_zckwatp59wpcvxjowlen" onclick="showDetails('zckwatp59wpcvxjowlen')" class="text-xs sm:text-sm">
+              <td class="px-3 py-1 sm:px-6 sm:py-4 font-medium text-gray-900">
+                  
+                <div class="text-gray-900">Amazon</div>
+                <div class="text-gray-500 font-light">Amsterdam (hybrid option)</div>
+              </td>               
+              <td class="px-3 py-1 sm:px-6 sm:py-4 sm:whitespace-nowrap">
+                <div class="text-gray-900">Senior Software Engineer</div>
+                <div class="text-gray-500"></div>
+              </td>                  
+              <td class="px-3 py-1 sm:px-6 sm:py-4 whitespace-nowrap font-medium text-gray-900">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-500 text-white">
+                      €165,000
+                    </span>
+
+              </td>
+              <td class="hidden sm:table-cell px-6 py-4 whitespace-nowrap">
+                  <div class="text-sm text-gray-900">€9,720/month</div>
+              </td>
+              <td class="hidden sm:table-cell px-6 py-4 whitespace-nowrap text-sm font-light">
+                  <div class="text-sm text-gray-900">€117K salary, €48K equity/year 
+                      <a class="underline">Details</a>
+                  </div>
+              </td>
+            </tr>
+
+            <tr id="row_4xkw21uqw0wfh0fyevov" onclick="showDetails('4xkw21uqw0wfh0fyevov')" class="text-xs sm:text-sm">
+              <td class="px-3 py-1 sm:px-6 sm:py-4 font-medium text-gray-900">
+                  
+                <div class="text-gray-900">Elastic</div>
+                <div class="text-gray-500 font-light">Amsterdam (hybrid option)</div>
+              </td>               
+              <td class="px-3 py-1 sm:px-6 sm:py-4 sm:whitespace-nowrap">
+                <div class="text-gray-900">Principal Software Engineer I</div>
+                <div class="text-gray-500"></div>
+              </td>                  
+              <td class="px-3 py-1 sm:px-6 sm:py-4 whitespace-nowrap font-medium text-gray-900">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-500 text-white">
+                      €159,000
+                    </span>
+
+              </td>
+              <td class="hidden sm:table-cell px-6 py-4 whitespace-nowrap">
+                  <div class="text-sm text-gray-900">€10,417/month</div>
+              </td>
+              <td class="hidden sm:table-cell px-6 py-4 whitespace-nowrap text-sm font-light">
+                  <div class="text-sm text-gray-900">€125K salary, $20K sign-on, €17K equity/year 
+                      <a class="underline">Details</a>
+                  </div>
+              </td>
+            </tr>
+
+            <tr id="row_l5kvku4r7hv2zbz4ct9rm" onclick="showDetails('l5kvku4r7hv2zbz4ct9rm')" class="text-xs sm:text-sm">
+              <td class="px-3 py-1 sm:px-6 sm:py-4 font-medium text-gray-900">
+                  
+                <div class="text-gray-900">Optiver</div>
+                <div class="text-gray-500 font-light">Amsterdam</div>
+              </td>               
+              <td class="px-3 py-1 sm:px-6 sm:py-4 sm:whitespace-nowrap">
+                <div class="text-gray-900">Software Engineer</div>
+                <div class="text-gray-500"></div>
+              </td>                  
+              <td class="px-3 py-1 sm:px-6 sm:py-4 whitespace-nowrap font-medium text-gray-900">
+                  <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-500 text-white">
+                      €240,000
+                    </span>
+
+                      <span class="px-2 inline-flex text-xs leading-5 font-normal rounded-full bg-gray-200 text-gray-600">
+                        2020
+                      </span>
+              </td>
+              <td class="hidden sm:table-cell px-6 py-4 whitespace-nowrap">
+                  <div class="text-sm text-gray-900">€6,250/month</div>
+              </td>
+              <td class="hidden sm:table-cell px-6 py-4 whitespace-nowrap text-sm font-light">
+                  <div class="text-sm text-gray-900">€75K salary, €165K bonus 
+                      <a class="underline">Details</a>
+                  </div>
+              </td>
+            </tr>
+
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</div>
+
+<div class="bg-white px-4 py-3 flex items-center justify-between border-t border-gray-200 sm:px-6 max-w-full xl:max-w-4xl lg:min-w-xl mx-auto">
+  <div class="flex-1 flex justify-between sm:hidden">
+    <a onclick="gotoPreviousPage()" class="relative inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50">
+      Previous
+    </a>
+    <div>
+      <p class="text-xs text-gray-700">
+        <span class="page_countStart font-medium">1</span>
+        to
+        <span class="page_countEnd font-medium">20</span>
+        of
+        <span class="font-medium">169</span>
+      </p>
+    </div>
+    <a onclick="gotoNextPage()" class="ml-3 relative inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50">
+      Next
+    </a>
+  </div>
+  <div class="hidden sm:flex-1 sm:flex sm:items-center sm:justify-between">
+    <div>
+      <p class="text-sm text-gray-700">
+        Showing
+        <span class="page_countStart font-medium">1</span>
+        to
+        <span class="page_countEnd font-medium">20</span>
+        of
+        <span class="font-medium">169</span>
+        results
+      </p>
+    </div>
+    <div id="pageNumbers">
+      
+    </div>
+  </div>
+</div>
+
+<div class="text-sm pl-6 max-w-full xl:max-w-4xl lg:min-w-xl mx-auto">
+  <p>
+    <em>Netherlands data points are being added on an ongoing basis: once complete, the site will launch as beta. <a href="/addSalary">Submit a salary</a> with an email to get notified of the launch, or <a href="https://twitter.com/GergelyOrosz">follow on Twitter</a> for updates, or <a href="https://blog.pragmaticengineer.com/newsletter/">subscribe</a> to get notified of the site launching. Or just bookmark Tech Pays and check back - Gergely</em>
+  </p>
+
+</div>
+
+  <div class="bg-white max-w-full xl:max-w-4xl lg:min-w-xl mx-auto mt-4">
+    <div class="max-w-4xl mx-auto py-16 px-4 sm:px-6 sm:py-12 lg:max-w-7xl lg:px-8 lg:flex lg:items-center lg:justify-between">
+      <h2 class="text-xl sm:text-3xl font-extrabold tracking-tight text-gray-700">
+        <span class="block">Let's change the information asymmetry for compensation.</span>
+        <span class="block bg-gradient-to-r from-green-500 to-green-600 bg-clip-text text-transparent text-sm sm:text-base">When no one shares their salary, employers have the upper hand. We can change this.</span>
+      </h2>
+      <div class="mt-6 space-y-4 sm:space-y-0 sm:flex sm:space-x-5">
+        <a href="/addSalary" class="flex items-center justify-center bg-gradient-to-r from-green-500 to-green-600 bg-origin-border px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white hover:from-green-600 hover:to-green-700">
+          Add compensation
+        </a>
+      </div>
+    </div>
+  </div>
+
+<div class="hidden">
+  <table>
+    <tbody id="compensation_row_template">
+      <tr id="row_{{this.guid}}" onclick="showDetails('{{this.guid}}')" class="text-xs sm:text-sm">
+        <td class="px-3 py-1 sm:px-6 sm:py-4 font-medium text-gray-900">
+            
+          <div class="text-gray-900">{{this.companyName}}</div>
+          <div class="text-gray-500 font-light">{{this.city}}</div>
+        </td>               
+        <td class="px-3 py-1 sm:px-6 sm:py-4 sm:whitespace-nowrap">
+          <div class="text-gray-900">{{this.title}}</div>
+          <div class="text-gray-500">{{this.specialization}}</div>
+        </td>                  
+        <td class="px-3 py-1 sm:px-6 sm:py-4 whitespace-nowrap font-medium text-gray-900">
+            <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-500 text-white">
+                {{this.totalCompensation}}
+              </span>              
+              {{#if this.oldYearForData}}
+                <span class="px-2 inline-flex text-xs leading-5 font-normal rounded-full bg-gray-200 text-gray-600">
+                  {{this.oldYearForData}}
+                </span>
+              {{/if}}
+              {{#if this.otherContext}}
+                <span class="px-2 inline-flex text-xs leading-5 font-normal rounded-full bg-gray-200 text-gray-600">
+                  {{this.otherContext}}
+                </span>
+              {{/if}}
+        </td>
+        <td class="hidden sm:table-cell px-6 py-4 whitespace-nowrap">
+            <div class="text-sm text-gray-900">{{this.baseSalary}}</div>
+        </td>
+        <td class="hidden sm:table-cell px-6 py-4 whitespace-nowrap text-sm font-light">
+            <div class="text-sm text-gray-900">{{this.totalCompensationDetails}} 
+                <a class="underline">Details</a>
+            </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <div id="pageNumbersTemplate">
+    <nav class="relative z-0 inline-flex rounded-md shadow-sm -space-x-px" aria-label="Pagination">
+        <a class="relative inline-flex items-center px-2 py-2 rounded-l-md border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50"
+        onClick="goToPage({{ previousPageNumber }})">
+          <span class="sr-only">Previous</span>
+          <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+            <path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd" />
+          </svg>
+        </a>
+        {{#each pageNumbers}}
+          {{#if currentPage}}
+            <a aria-current="page" class="z-10 bg-indigo-50 border-indigo-500 text-indigo-600 relative inline-flex items-center px-4 py-2 border text-sm font-medium"
+            onClick="goToPage({{ pageNumber }})">
+              {{ pageNumber }}
+            </a>
+          {{/if}}
+          {{#if dots}}
+             <span class="relative inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-sm font-medium text-gray-700">
+              ...
+            </span>
+          {{/if}}
+          {{#if notCurrentPage}}
+             <a class="bg-white border-gray-300 text-gray-500 hover:bg-gray-50 md:inline-flex relative items-center px-4 py-2 border text-sm font-medium"
+             onClick="goToPage({{ pageNumber }})">
+              {{ pageNumber }}
+            </a>
+          {{/if}}
+
+        {{/each}}
+       
+        <a class="relative inline-flex items-center px-2 py-2 rounded-r-md border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50"
+        onClick="goToPage({{ nextPageNumber }})">
+          <span class="sr-only">Next</span>
+          <!-- Heroicon name: solid/chevron-right -->
+          <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+            <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+          </svg>
+        </a>
+      </nav>
+  </div>
+</div>
+
+    </div>
+
+    
+<script type="application/javascript">
+  let COMPENSATION_LIST = [
+      {
+        title: 'Principal Developer',
+        guid: 'oakvkx94htkgyhboaamzh',
+        specialization: '',
+        city: 'Amsterdam',
+        companyName: 'Booking.com',
+        totalCompensation: '€206,000',
+        totalCompensationNumber: 206000,
+        totalCompensationDetails: '€132K salary, €34K bonus, €40K equity/year',
+        baseSalary: '€10,961/month',
+        baseSalaryNumber: 131532,
+        oldYearForData: '2020',
+        otherContext: ''
+      },    
+      {
+        title: 'Graduate Software Engineer',
+        guid: 'nskww8lizlfzmg7lip3lg',
+        specialization: '',
+        city: 'Amsterdam (flexible days)',
+        companyName: 'Optiver',
+        totalCompensation: '€125,000',
+        totalCompensationNumber: 125000,
+        totalCompensationDetails: '€75K salary, €0K bonus, €50K sign-on, €5K benefits, €8K relocation',
+        baseSalary: '€6,250/month',
+        baseSalaryNumber: 75000,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Engineering Manager',
+        guid: 'efkwj5nw7fi8t1dhixlbg',
+        specialization: '',
+        city: 'Flexible days',
+        companyName: 'Booking.com',
+        totalCompensation: '€155,000',
+        totalCompensationNumber: 155000,
+        totalCompensationDetails: '€120K salary, €24K bonus, €11K equity/year',
+        baseSalary: '€10,000/month',
+        baseSalaryNumber: 120000,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Senior Machine Learning Engineer',
+        guid: 'ozkwnry796j3pqtxvf3zr',
+        specialization: '',
+        city: 'Amsterdam',
+        companyName: 'Booking.com',
+        totalCompensation: '€156,000',
+        totalCompensationNumber: 156000,
+        totalCompensationDetails: '€119K salary, €24K bonus, €13K equity/year, €2K benefits',
+        baseSalary: '€9,875/month',
+        baseSalaryNumber: 118500,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Senior Software Engineer',
+        guid: '8hkwkg3hibnc51q4psxs',
+        specialization: '',
+        city: 'Amsterdam',
+        companyName: 'Booking.com',
+        totalCompensation: '€143,000',
+        totalCompensationNumber: 143000,
+        totalCompensationDetails: '€110K salary, €22K bonus, €11K equity/year',
+        baseSalary: '€9,167/month',
+        baseSalaryNumber: 110000,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Software Engineer',
+        guid: '6okvtkkg3llv69xq8w9dp',
+        specialization: '',
+        city: 'Amsterdam',
+        companyName: 'Uber',
+        totalCompensation: '€151,000',
+        totalCompensationNumber: 151000,
+        totalCompensationDetails: '€97K salary, €14K bonus, €41K equity/year',
+        baseSalary: '€8,113/month',
+        baseSalaryNumber: 97350,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Senior Data Scientist ',
+        guid: 'ltksoiuzlzpsvwkeec4mt',
+        specialization: '',
+        city: '',
+        companyName: 'Booking.com ',
+        totalCompensation: '€136,000',
+        totalCompensationNumber: 136000,
+        totalCompensationDetails: '€104K salary, €21K bonus, €11K equity/year',
+        baseSalary: '€8,667/month',
+        baseSalaryNumber: 104000,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Senior Solutions Architect',
+        guid: 'x5kutkg756de5jm9a4tsd',
+        specialization: '',
+        city: 'Remote from anywhere',
+        companyName: '🔒 Data company pre-ipo',
+        totalCompensation: '€217,000',
+        totalCompensationNumber: 217000,
+        totalCompensationDetails: '€152K salary, €25K bonus, €40K equity/year, €5K benefits',
+        baseSalary: '€12,667/month',
+        baseSalaryNumber: 152000,
+        oldYearForData: '',
+        otherContext: 'Freelance'
+      },    
+      {
+        title: 'Staff Software Engineer',
+        guid: '0lkwx78bygwx2ifsixdvf',
+        specialization: '',
+        city: 'Remote within country',
+        companyName: '🔒 FinTech company',
+        totalCompensation: '€434,000',
+        totalCompensationNumber: 434000,
+        totalCompensationDetails: '€153K salary, €31K bonus, €50K sign-on, €200K equity/year',
+        baseSalary: '€12,750/month',
+        baseSalaryNumber: 153000,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Engineering Lead',
+        guid: 'y7kwx7oaleigs8aj06y2i',
+        specialization: '',
+        city: 'Amsterdam',
+        companyName: '🔒 Travel industry',
+        totalCompensation: '€455,000',
+        totalCompensationNumber: 455000,
+        totalCompensationDetails: '€130K salary, €325K equity/year, €6K benefits',
+        baseSalary: '€10,833/month',
+        baseSalaryNumber: 130000,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Software Engineer Intern ',
+        guid: 'g3kwyx9zfg9wx1haq88ra',
+        specialization: '',
+        city: 'Amsterdam Zuid',
+        companyName: 'Optiver ',
+        totalCompensation: '€120,000',
+        totalCompensationNumber: 120000,
+        totalCompensationDetails: '',
+        baseSalary: '€10,000/month',
+        baseSalaryNumber: 120000,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Software Engineer Intern',
+        guid: 'p5kwgfplmq2wnjrfm5o0m',
+        specialization: '',
+        city: 'Amsterdam',
+        companyName: 'Optiver ',
+        totalCompensation: '€130,000',
+        totalCompensationNumber: 130000,
+        totalCompensationDetails: '',
+        baseSalary: '€10,800/month',
+        baseSalaryNumber: 129600,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Senior Software Engineer',
+        guid: '60kvkuo9syftry7je3yjh',
+        specialization: '',
+        city: 'Amsterdam (hybrid option)',
+        companyName: 'Elastic',
+        totalCompensation: '€139,000',
+        totalCompensationNumber: 139000,
+        totalCompensationDetails: '€108K salary, €8K sign-on, €23K equity/year, €15K benefits',
+        baseSalary: '€9,000/month',
+        baseSalaryNumber: 108000,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Graduate Software Engineer',
+        guid: 'klkw6mxytweziba873mbm',
+        specialization: '',
+        city: 'Amsterdam',
+        companyName: 'IMC Trading',
+        totalCompensation: '€165,000',
+        totalCompensationNumber: 165000,
+        totalCompensationDetails: '€100K salary, €35K bonus, €30K sign-on, €3K relocation',
+        baseSalary: '€8,333/month',
+        baseSalaryNumber: 100000,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Senior Data Engineer',
+        guid: 'fqkwxy2aeyi5880qs2qc',
+        specialization: '',
+        city: 'Amsterdam (hybrid option)',
+        companyName: 'Spotify',
+        totalCompensation: '€137,000',
+        totalCompensationNumber: 137000,
+        totalCompensationDetails: '€107K salary, €30K equity/year',
+        baseSalary: '€8,917/month',
+        baseSalaryNumber: 107000,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: '🔒 Senior-level position within software engineering',
+        guid: 'fkkt8ccunr24zei6hlcs8',
+        specialization: '',
+        city: 'Amsterdam (remote within country)',
+        companyName: 'Microsoft ',
+        totalCompensation: '€154,000',
+        totalCompensationNumber: 154000,
+        totalCompensationDetails: '€119K salary, €30K bonus, €5K equity/year, €30K benefits',
+        baseSalary: '€9,950/month',
+        baseSalaryNumber: 119394,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Solution Architect',
+        guid: 'kwkwwa4i2zhqo23784tr',
+        specialization: '',
+        city: 'Flexible days',
+        companyName: 'Stripe',
+        totalCompensation: '€200,000',
+        totalCompensationNumber: 200000,
+        totalCompensationDetails: '€114K salary, €29K bonus, €0K sign-on, €58K equity/year, €10K benefits',
+        baseSalary: '€9,531/month',
+        baseSalaryNumber: 114372,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Senior Software Engineer',
+        guid: 'zckwatp59wpcvxjowlen',
+        specialization: '',
+        city: 'Amsterdam (hybrid option)',
+        companyName: 'Amazon',
+        totalCompensation: '€165,000',
+        totalCompensationNumber: 165000,
+        totalCompensationDetails: '€117K salary, €48K equity/year',
+        baseSalary: '€9,720/month',
+        baseSalaryNumber: 116640,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Principal Software Engineer I',
+        guid: '4xkw21uqw0wfh0fyevov',
+        specialization: '',
+        city: 'Amsterdam (hybrid option)',
+        companyName: 'Elastic',
+        totalCompensation: '€159,000',
+        totalCompensationNumber: 159000,
+        totalCompensationDetails: '€125K salary, $20K sign-on, €17K equity/year',
+        baseSalary: '€10,417/month',
+        baseSalaryNumber: 125000,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Software Engineer',
+        guid: 'l5kvku4r7hv2zbz4ct9rm',
+        specialization: '',
+        city: 'Amsterdam',
+        companyName: 'Optiver',
+        totalCompensation: '€240,000',
+        totalCompensationNumber: 240000,
+        totalCompensationDetails: '€75K salary, €165K bonus',
+        baseSalary: '€6,250/month',
+        baseSalaryNumber: 75000,
+        oldYearForData: '2020',
+        otherContext: ''
+      },    
+      {
+        title: 'Software Engineer',
+        guid: 'mpkvku1fwhp22tvov3hg',
+        specialization: '',
+        city: 'Amsterdam',
+        companyName: 'Optiver',
+        totalCompensation: '€180,000',
+        totalCompensationNumber: 180000,
+        totalCompensationDetails: '€75K salary, €105K bonus',
+        baseSalary: '€6,250/month',
+        baseSalaryNumber: 75000,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'New Grad Software Engineer',
+        guid: 'qukvktzaw0sfey8aictt',
+        specialization: '',
+        city: 'Amsterdam',
+        companyName: 'Optiver',
+        totalCompensation: '€100,000',
+        totalCompensationNumber: 100000,
+        totalCompensationDetails: '€60K salary, €40K bonus',
+        baseSalary: '€5,000/month',
+        baseSalaryNumber: 60000,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Senior Software Engineer',
+        guid: 'cvksujld8jf68usaqshz',
+        specialization: '',
+        city: '',
+        companyName: 'GitLab',
+        totalCompensation: '€181,000',
+        totalCompensationNumber: 181000,
+        totalCompensationDetails: '€95K salary, €2K bonus, €84K equity/year',
+        baseSalary: '€7,917/month',
+        baseSalaryNumber: 95000,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Software Engineer',
+        guid: 'kshlu9coqcpyw6ullq',
+        specialization: '',
+        city: 'Remote (remote from anywhere)',
+        companyName: 'GitLab',
+        totalCompensation: '€110,000',
+        totalCompensationNumber: 110000,
+        totalCompensationDetails: '€80K salary, €30K equity/year',
+        baseSalary: '€6,667/month',
+        baseSalaryNumber: 80000,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Senior Software Developer',
+        guid: 'xuktw0w156mvuzufh53s8',
+        specialization: '',
+        city: 'Amsterdam',
+        companyName: 'Booking.com',
+        totalCompensation: '€132,000',
+        totalCompensationNumber: 132000,
+        totalCompensationDetails: '€101K salary, €20K bonus, €11K equity/year',
+        baseSalary: '€8,417/month',
+        baseSalaryNumber: 101000,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Software Engineer',
+        guid: 'yikuwuolxjfh5zsfgn17s',
+        specialization: '',
+        city: 'Flexible days',
+        companyName: '🔒 Proprietary trading firm',
+        totalCompensation: '€125,000',
+        totalCompensationNumber: 125000,
+        totalCompensationDetails: '€75K salary, €0K bonus, €50K sign-on, €5K benefits, €8K relocation',
+        baseSalary: '€6,250/month',
+        baseSalaryNumber: 75000,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Software Engineer',
+        guid: 'emkunw70f6v9w4ylqfsd8',
+        specialization: '',
+        city: 'Amsterdam (flexible days)',
+        companyName: 'Optiver',
+        totalCompensation: '€196,000',
+        totalCompensationNumber: 196000,
+        totalCompensationDetails: '€81K salary, €65K bonus, €50K sign-on, €5K benefits, €8K relocation',
+        baseSalary: '€6,750/month',
+        baseSalaryNumber: 81000,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Engineering Manager ',
+        guid: '2gkvdjuze1rssmb3ydzcp',
+        specialization: '',
+        city: 'Hybrid option',
+        companyName: 'Booking.com ',
+        totalCompensation: '€150,000',
+        totalCompensationNumber: 150000,
+        totalCompensationDetails: '€110K salary, €22K bonus, €5K sign-on, €13K equity/year, €1K benefits, €5K relocation',
+        baseSalary: '€9,167/month',
+        baseSalaryNumber: 110000,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Solutions Architect',
+        guid: '71kvfh13x8yplhvjol8r',
+        specialization: '',
+        city: 'Amsterdam (hybrid option)',
+        companyName: 'Amazon',
+        totalCompensation: '€150,000',
+        totalCompensationNumber: 150000,
+        totalCompensationDetails: '€97K salary, €40K sign-on, €13K equity/year',
+        baseSalary: '€8,100/month',
+        baseSalaryNumber: 97200,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Senior Engineering Manager',
+        guid: 'fdktebn3s6fz115cmwr4',
+        specialization: '',
+        city: '',
+        companyName: 'Booking.com',
+        totalCompensation: '€159,000',
+        totalCompensationNumber: 159000,
+        totalCompensationDetails: '€114K salary, €29K bonus, €17K equity/year',
+        baseSalary: '€9,500/month',
+        baseSalaryNumber: 114000,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Machine Learning Scientist',
+        guid: 'kshcsp0y0umkfcmst9y9',
+        specialization: '',
+        city: 'Amsterdam (hybrid option)',
+        companyName: 'Booking.com',
+        totalCompensation: '€125,000',
+        totalCompensationNumber: 125000,
+        totalCompensationDetails: '€95K salary, €10K bonus, €20K equity/year, €1K benefits, €8K relocation',
+        baseSalary: '€7,917/month',
+        baseSalaryNumber: 95000,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Senior Product Manager',
+        guid: 'n6ksqkjcj0kipktb9oxaq',
+        specialization: '',
+        city: 'Amsterdam (hybrid option)',
+        companyName: 'Booking.com',
+        totalCompensation: '€130,000',
+        totalCompensationNumber: 130000,
+        totalCompensationDetails: '€100K salary, €17K bonus, €13K equity/year',
+        baseSalary: '€8,333/month',
+        baseSalaryNumber: 100000,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Staff Engineer',
+        guid: 'svkv0okrqlzr8h48kl2gq',
+        specialization: 'Full Stack',
+        city: 'Amsterdam (remote from anywhere)',
+        companyName: 'GitLab',
+        totalCompensation: '€210,000',
+        totalCompensationNumber: 210000,
+        totalCompensationDetails: '€135K salary, €75K equity/year',
+        baseSalary: '€11,250/month',
+        baseSalaryNumber: 135000,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Principal Engineer',
+        guid: 'zqkureve0xbryayq9nbjt',
+        specialization: '',
+        city: '',
+        companyName: 'Booking.com',
+        totalCompensation: '€254,000',
+        totalCompensationNumber: 254000,
+        totalCompensationDetails: '€155K salary, €39K bonus, €60K equity/year, €3K benefits',
+        baseSalary: '€12,917/month',
+        baseSalaryNumber: 155000,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Senior Software Developer',
+        guid: 'xxktekp5dafh0pdcv1ka',
+        specialization: '',
+        city: 'Amsterdam',
+        companyName: 'Booking.com',
+        totalCompensation: '€142,000',
+        totalCompensationNumber: 142000,
+        totalCompensationDetails: '€107K salary, €21K bonus, €2K sign-on, €11K equity/year, €5K relocation',
+        baseSalary: '€8,917/month',
+        baseSalaryNumber: 107000,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Lead Software Developer',
+        guid: 'ouksr8josgqp04w45rpn',
+        specialization: '',
+        city: 'Amsterdam',
+        companyName: 'Booking.com',
+        totalCompensation: '€141,000',
+        totalCompensationNumber: 141000,
+        totalCompensationDetails: '€108K salary, €22K bonus, €11K equity/year',
+        baseSalary: '€9,000/month',
+        baseSalaryNumber: 108000,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Senior Software Engineer in Test',
+        guid: 'igksneqn8bfrpe9gz54j6',
+        specialization: '',
+        city: 'Amsterdam',
+        companyName: 'ServiceNow',
+        totalCompensation: '€145,000',
+        totalCompensationNumber: 145000,
+        totalCompensationDetails: '€70K salary, €5K bonus, €70K equity/year',
+        baseSalary: '€5,833/month',
+        baseSalaryNumber: 70000,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Product Development Manager',
+        guid: 'xyksukcnzz4aanhut5ryq',
+        specialization: '',
+        city: 'Amsterdam',
+        companyName: '🔒 US Company',
+        totalCompensation: '€173,000',
+        totalCompensationNumber: 173000,
+        totalCompensationDetails: '',
+        baseSalary: '€14,400/month',
+        baseSalaryNumber: 172800,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Senior Software Engineer',
+        guid: 'slkt480w1tx050webuf6c',
+        specialization: '',
+        city: 'Amsterdam (hybrid option)',
+        companyName: 'Netflix',
+        totalCompensation: '€147,000',
+        totalCompensationNumber: 147000,
+        totalCompensationDetails: '€140K salary, €7K equity/year, €10K benefits',
+        baseSalary: '€11,700/month',
+        baseSalaryNumber: 140400,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Senior Software Engineer',
+        guid: 'mhksq9x5zwqnrilh3h89',
+        specialization: '',
+        city: 'Amsterdam (remote within country)',
+        companyName: '🔒 US Company, Entertainment Industry',
+        totalCompensation: '€151,000',
+        totalCompensationNumber: 151000,
+        totalCompensationDetails: '',
+        baseSalary: '€12,600/month',
+        baseSalaryNumber: 151200,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Senior Software Engineer',
+        guid: 'ksaaj0jsxqn52jihra',
+        specialization: '',
+        city: 'Amsterdam (remote within country)',
+        companyName: '🔒 FinTech Startup',
+        totalCompensation: '€159,000',
+        totalCompensationNumber: 159000,
+        totalCompensationDetails: '€119K salary, €40K equity/year, €5K benefits',
+        baseSalary: '€9,917/month',
+        baseSalaryNumber: 119000,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: '🔒 Mid-level position within software engineering',
+        guid: 'kslkgquwy3o52qjt6xq',
+        specialization: '',
+        city: 'Amsterdam',
+        companyName: 'Databricks',
+        totalCompensation: '€161,000',
+        totalCompensationNumber: 161000,
+        totalCompensationDetails: '€92K salary, €9K bonus, €60K equity/year',
+        baseSalary: '€7,650/month',
+        baseSalaryNumber: 91800,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Principal Engineer',
+        guid: '8iksuid2np5axbrvhdeov',
+        specialization: '',
+        city: 'Remote from anywhere',
+        companyName: '🔒 Healthcare Company',
+        totalCompensation: '€166,000',
+        totalCompensationNumber: 166000,
+        totalCompensationDetails: '€138K salary, €28K bonus, €13K benefits',
+        baseSalary: '€11,500/month',
+        baseSalaryNumber: 138000,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Principal Solutions Engineer',
+        guid: 'mmku8dq4prqtjsdcyrqkl',
+        specialization: '',
+        city: 'Amsterdam (remote from anywhere)',
+        companyName: '🔒 FinTech industry',
+        totalCompensation: '€221,000',
+        totalCompensationNumber: 221000,
+        totalCompensationDetails: '€162K salary, €49K bonus, €10K sign-on, €9K benefits',
+        baseSalary: '€13,500/month',
+        baseSalaryNumber: 162000,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Design Manager',
+        guid: '3jktckyzw5896ghfchpoy',
+        specialization: '',
+        city: 'Amsterdam',
+        companyName: '🔒 Travel sector company',
+        totalCompensation: '€174,000',
+        totalCompensationNumber: 174000,
+        totalCompensationDetails: '€112K salary, €22K bonus, €40K equity/year',
+        baseSalary: '€9,333/month',
+        baseSalaryNumber: 112000,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Principal Engineer',
+        guid: 'mlksuhyouxmpk1nkwzpt',
+        specialization: '',
+        city: 'Remote from anywhere',
+        companyName: '🔒 Enterprise Software Company',
+        totalCompensation: '€222,000',
+        totalCompensationNumber: 222000,
+        totalCompensationDetails: '€145K salary, €29K bonus, €48K equity/year, €18K benefits',
+        baseSalary: '€12,083/month',
+        baseSalaryNumber: 145000,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Engineering Manager',
+        guid: 'ksbgvty6bu1lp0ccsd4',
+        specialization: '',
+        city: 'Amsterdam',
+        companyName: 'Booking.com',
+        totalCompensation: '€176,000',
+        totalCompensationNumber: 176000,
+        totalCompensationDetails: '€110K salary, €28K bonus, €25K sign-on, €13K equity/year, €5K benefits, €10K relocation',
+        baseSalary: '€9,167/month',
+        baseSalaryNumber: 110000,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Senior Engineering Manager',
+        guid: 'nnktwxj7g4smace3nz24f',
+        specialization: '',
+        city: '',
+        companyName: '🔒 Travel sector company',
+        totalCompensation: '€202,000',
+        totalCompensationNumber: 202000,
+        totalCompensationDetails: '€121K salary, €30K bonus, €51K equity/year',
+        baseSalary: '€10,083/month',
+        baseSalaryNumber: 121000,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Group Product Manager',
+        guid: 'ksg92vvoemfp08oaujk',
+        specialization: '',
+        city: 'Amsterdam',
+        companyName: '🔒 Travel sector company',
+        totalCompensation: '€279,000',
+        totalCompensationNumber: 279000,
+        totalCompensationDetails: '€150K salary, €38K bonus, €75K sign-on, €17K equity/year',
+        baseSalary: '€12,500/month',
+        baseSalaryNumber: 150000,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Principal Product Manager',
+        guid: 'e1ktdzbeohfj056yxzspv',
+        specialization: '',
+        city: 'Hybrid option',
+        companyName: 'Microsoft',
+        totalCompensation: '€190,000',
+        totalCompensationNumber: 190000,
+        totalCompensationDetails: '€135K salary, €30K bonus, €25K equity/year, €10K benefits',
+        baseSalary: '€11,250/month',
+        baseSalaryNumber: 135000,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Senior Software Engineer',
+        guid: 'ksh6i1po6fq4km1p3vo',
+        specialization: '',
+        city: 'Amsterdam (flexible days)',
+        companyName: 'Miro',
+        totalCompensation: '€135,000',
+        totalCompensationNumber: 135000,
+        totalCompensationDetails: '€95K salary, €40K equity/year, €20K benefits',
+        baseSalary: '€7,917/month',
+        baseSalaryNumber: 95000,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Senior Developer ',
+        guid: 'ksitdz95ixwx8j9962m',
+        specialization: '',
+        city: '',
+        companyName: 'Booking.com',
+        totalCompensation: '€142,000',
+        totalCompensationNumber: 142000,
+        totalCompensationDetails: '€101K salary, €20K bonus, €10K sign-on, €11K equity/year, €2K benefits',
+        baseSalary: '€8,417/month',
+        baseSalaryNumber: 101000,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Senior Software Engineer',
+        guid: 'ksix2vtcmwkmgpebu9l',
+        specialization: 'Android',
+        city: 'Amsterdam',
+        companyName: 'Booking.com',
+        totalCompensation: '€145,000',
+        totalCompensationNumber: 145000,
+        totalCompensationDetails: '€102K salary, €20K bonus, €12K sign-on, €11K equity/year, €1K benefits, €10K relocation',
+        baseSalary: '€8,458/month',
+        baseSalaryNumber: 101500,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Data Science Manager',
+        guid: '8dktog1klowgdbwrj6me',
+        specialization: '',
+        city: 'Amsterdam (flexible days)',
+        companyName: 'Philip Morris',
+        totalCompensation: '€151,000',
+        totalCompensationNumber: 151000,
+        totalCompensationDetails: '€120K salary, €16K bonus, €15K equity/year',
+        baseSalary: '€10,000/month',
+        baseSalaryNumber: 120000,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Senior Software Engineer',
+        guid: '4zkt7javko3d3m4w40lae',
+        specialization: '',
+        city: 'Amsterdam',
+        companyName: 'GitLab',
+        totalCompensation: '€161,000',
+        totalCompensationNumber: 161000,
+        totalCompensationDetails: '€96K salary, €2K bonus, €63K equity/year',
+        baseSalary: '€8,000/month',
+        baseSalaryNumber: 96000,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Software Engineer',
+        guid: '3lksr3cm25ecyt186xfj4',
+        specialization: '',
+        city: 'Amsterdam',
+        companyName: '🔒 Cloud data platform',
+        totalCompensation: '€158,000',
+        totalCompensationNumber: 158000,
+        totalCompensationDetails: '€85K salary, €10K bonus, €63K equity/year, $7K relocation',
+        baseSalary: '€7,083/month',
+        baseSalaryNumber: 85000,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Senior Software Engineer',
+        guid: '1vksunlds5jpj2r0h51c8',
+        specialization: '',
+        city: '',
+        companyName: 'Uber',
+        totalCompensation: '€167,000',
+        totalCompensationNumber: 167000,
+        totalCompensationDetails: '€110K salary, €17K bonus, €40K equity/year',
+        baseSalary: '€9,167/month',
+        baseSalaryNumber: 110000,
+        oldYearForData: '2018',
+        otherContext: ''
+      },    
+      {
+        title: '🔒 Senior-level position within product management',
+        guid: 'qhksqlm0rjp4k1czci8zf',
+        specialization: '',
+        city: 'Amsterdam',
+        companyName: 'Uber ',
+        totalCompensation: '€200,000',
+        totalCompensationNumber: 200000,
+        totalCompensationDetails: '€115K salary, €23K bonus, €15K sign-on, €47K equity/year, €6K benefits, $13K relocation',
+        baseSalary: '€9,583/month',
+        baseSalaryNumber: 115000,
+        oldYearForData: '2019',
+        otherContext: ''
+      },    
+      {
+        title: 'Senior Software Engineer',
+        guid: 'ksham0xo2obdffvd8no',
+        specialization: 'Fullstack',
+        city: 'Amsterdam',
+        companyName: 'Booking.com',
+        totalCompensation: '€165,000',
+        totalCompensationNumber: 165000,
+        totalCompensationDetails: '€111K salary, €37K bonus, €17K equity/year',
+        baseSalary: '€9,250/month',
+        baseSalaryNumber: 111000,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Engineering Manager I',
+        guid: 'ksbiwlyn8zdcmadmgti',
+        specialization: '',
+        city: 'Amsterdam',
+        companyName: '🔒 Ride sharing company',
+        totalCompensation: '€170,000',
+        totalCompensationNumber: 170000,
+        totalCompensationDetails: '€105K salary, €23K bonus, €43K equity/year, €10K relocation',
+        baseSalary: '€8,750/month',
+        baseSalaryNumber: 105000,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Senior Software Engineer',
+        guid: 'pfksr9yflk570wolsvo23',
+        specialization: '',
+        city: 'Amsterdam',
+        companyName: 'Uber',
+        totalCompensation: '€171,000',
+        totalCompensationNumber: 171000,
+        totalCompensationDetails: '€102K salary, €23K bonus, €46K equity/year',
+        baseSalary: '€8,500/month',
+        baseSalaryNumber: 102000,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Senior Software Engineer',
+        guid: '13ktbvh9a926yppfn6dtp',
+        specialization: '',
+        city: 'Amsterdam (flexible days)',
+        companyName: 'Uber',
+        totalCompensation: '€192,000',
+        totalCompensationNumber: 192000,
+        totalCompensationDetails: '€110K salary, €25K bonus, €15K sign-on, €42K equity/year',
+        baseSalary: '€9,167/month',
+        baseSalaryNumber: 110000,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: '🔒 Mid-level position within data science',
+        guid: 'lwktvztwpibchso53fui',
+        specialization: '',
+        city: 'Amsterdam',
+        companyName: 'Booking.com',
+        totalCompensation: '€115,000',
+        totalCompensationNumber: 115000,
+        totalCompensationDetails: '€94K salary, €14K bonus, €7K equity/year',
+        baseSalary: '€7,833/month',
+        baseSalaryNumber: 94000,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Senior Software Engineer',
+        guid: 'v8ktzxhbaqnkcar5tzzgj',
+        specialization: '',
+        city: 'Amsterdam',
+        companyName: 'Booking.com',
+        totalCompensation: '€160,000',
+        totalCompensationNumber: 160000,
+        totalCompensationDetails: '€100K salary, €20K bonus, €40K equity/year',
+        baseSalary: '€8,325/month',
+        baseSalaryNumber: 99900,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: '🔒 Senior-level position within design',
+        guid: 'ozkty58oh2d46a3djmx0u',
+        specialization: '',
+        city: 'Amsterdam',
+        companyName: 'Booking.com',
+        totalCompensation: '€132,000',
+        totalCompensationNumber: 132000,
+        totalCompensationDetails: '€99K salary, €20K bonus, €13K equity/year',
+        baseSalary: '€8,250/month',
+        baseSalaryNumber: 99000,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Engineering Manager',
+        guid: '1wku34rc5jcwpxfzf89xj',
+        specialization: '',
+        city: 'Amsterdam (flexible days)',
+        companyName: 'Booking.com',
+        totalCompensation: '€142,000',
+        totalCompensationNumber: 142000,
+        totalCompensationDetails: '€109K salary, €22K bonus, €11K equity/year, €5K relocation',
+        baseSalary: '€9,083/month',
+        baseSalaryNumber: 109000,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Engineering Manager',
+        guid: 'ksa6arz1hb3j7zja1zr',
+        specialization: '',
+        city: 'Amsterdam',
+        companyName: 'Booking.com',
+        totalCompensation: '€143,000',
+        totalCompensationNumber: 143000,
+        totalCompensationDetails: '€110K salary, €22K bonus, €11K equity/year',
+        baseSalary: '€9,167/month',
+        baseSalaryNumber: 110000,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'SDE II',
+        guid: '5ykuci1xmjyi3r3lgieij',
+        specialization: '',
+        city: 'Amsterdam (flexible days)',
+        companyName: 'Amazon',
+        totalCompensation: '€124,000',
+        totalCompensationNumber: 124000,
+        totalCompensationDetails: '€97K salary, €22K sign-on, €5K equity/year',
+        baseSalary: '€8,100/month',
+        baseSalaryNumber: 97200,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Graduate Software Engineer',
+        guid: '0lkuhgj8hc6tma8axo9vw',
+        specialization: '',
+        city: 'Amsterdam',
+        companyName: 'IMC Trading',
+        totalCompensation: '€110,000',
+        totalCompensationNumber: 110000,
+        totalCompensationDetails: '€70K salary, €25K bonus, €15K sign-on, €4K relocation',
+        baseSalary: '€5,833/month',
+        baseSalaryNumber: 70000,
+        oldYearForData: '2020',
+        otherContext: ''
+      },    
+      {
+        title: 'Senior Engineer',
+        guid: '0ykt0hxn3yk0s2nbubfvk',
+        specialization: '',
+        city: 'Amsterdam',
+        companyName: 'GitHub',
+        totalCompensation: '€225,000',
+        totalCompensationNumber: 225000,
+        totalCompensationDetails: '€120K salary, €30K bonus, €75K equity/year',
+        baseSalary: '€10,000/month',
+        baseSalaryNumber: 120000,
+        oldYearForData: '2020',
+        otherContext: ''
+      },    
+      {
+        title: 'Software Engineer',
+        guid: 'lekt17krfzms0bn4p808',
+        specialization: '',
+        city: 'Amsterdam',
+        companyName: 'Booking.com',
+        totalCompensation: '€107,000',
+        totalCompensationNumber: 107000,
+        totalCompensationDetails: '€90K salary, €7K bonus, €10K equity/year, €4K benefits, €20K relocation',
+        baseSalary: '€7,500/month',
+        baseSalaryNumber: 90000,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: '🔒 Senior-level position within software engineering',
+        guid: 'pekt4nldkwtlzzk4jjjs',
+        specialization: '',
+        city: 'Amsterdam',
+        companyName: 'Amazon',
+        totalCompensation: '€150,000',
+        totalCompensationNumber: 150000,
+        totalCompensationDetails: '€104K salary, €40K sign-on, €6K equity/year',
+        baseSalary: '€8,667/month',
+        baseSalaryNumber: 104000,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Data Engineer',
+        guid: 'qukt6srag8any9jaqsfjm',
+        specialization: '',
+        city: 'Amsterdam',
+        companyName: 'Booking.com',
+        totalCompensation: '€110,000',
+        totalCompensationNumber: 110000,
+        totalCompensationDetails: '€90K salary, €14K bonus, €7K equity/year, €6K relocation',
+        baseSalary: '€7,500/month',
+        baseSalaryNumber: 90000,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Principal Solutions Engineer',
+        guid: '84ksyhssp14duoh8yo1o9',
+        specialization: 'L7',
+        city: 'Amsterdam',
+        companyName: 'Amazon',
+        totalCompensation: '€198,000',
+        totalCompensationNumber: 198000,
+        totalCompensationDetails: '€130K salary, €60K bonus, €8K equity/year',
+        baseSalary: '€10,833/month',
+        baseSalaryNumber: 130000,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'SDE2',
+        guid: 'kgksye3foqi7mp0sg8h1q',
+        specialization: 'L5',
+        city: 'Amsterdam',
+        companyName: 'Amazon',
+        totalCompensation: '€97,000',
+        totalCompensationNumber: 97000,
+        totalCompensationDetails: '€75K salary, €17K sign-on, €5K equity/year',
+        baseSalary: '€6,250/month',
+        baseSalaryNumber: 75000,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Senior Solutions Architect',
+        guid: 'ksk8uleq6cx7bdrrrtl',
+        specialization: '',
+        city: 'Amsterdam (flexible days)',
+        companyName: '🔒 US e-commerce company',
+        totalCompensation: '€143,000',
+        totalCompensationNumber: 143000,
+        totalCompensationDetails: '€115K salary, €22K sign-on, €6K equity/year',
+        baseSalary: '€9,583/month',
+        baseSalaryNumber: 115000,
+        oldYearForData: '2020',
+        otherContext: ''
+      },    
+      {
+        title: 'Software Development Engineer',
+        guid: '0vksvr1ktnv3jdwiqa55n',
+        specialization: 'L4',
+        city: 'Amsterdam (hybrid option)',
+        companyName: 'Amazon',
+        totalCompensation: '€110,000',
+        totalCompensationNumber: 110000,
+        totalCompensationDetails: '€80K salary, €30K equity/year, €5K benefits',
+        baseSalary: '€6,667/month',
+        baseSalaryNumber: 80000,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Senior Software Engineer',
+        guid: 'gpksuu1poanxrbe8l5u9',
+        specialization: 'L6',
+        city: 'Amsterdam (flexible days)',
+        companyName: 'Amazon',
+        totalCompensation: '€225,000',
+        totalCompensationNumber: 225000,
+        totalCompensationDetails: '€90K salary, €135K equity/year, €3K benefits',
+        baseSalary: '€7,500/month',
+        baseSalaryNumber: 90000,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Software Engineer',
+        guid: 'w7ksobvybo753y2vso6ch',
+        specialization: '',
+        city: '',
+        companyName: 'Booking.com',
+        totalCompensation: '€101,000',
+        totalCompensationNumber: 101000,
+        totalCompensationDetails: '€85K salary, €10K bonus, €6K equity/year',
+        baseSalary: '€7,110/month',
+        baseSalaryNumber: 85320,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: '🔒 Intern-level position within software engineering',
+        guid: 'csksmtrxmwhmioh8r8y4q',
+        specialization: '',
+        city: 'Amsterdam (flexible days)',
+        companyName: '🔒 Trading company',
+        totalCompensation: '€75,000',
+        totalCompensationNumber: 75000,
+        totalCompensationDetails: '',
+        baseSalary: '€6,250/month',
+        baseSalaryNumber: 75000,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: '🔒 Mid-level position within product management',
+        guid: 't3ksoe1z07nah2jfrg39n',
+        specialization: '',
+        city: 'Amsterdam',
+        companyName: 'Booking.com',
+        totalCompensation: '€105,000',
+        totalCompensationNumber: 105000,
+        totalCompensationDetails: '€84K salary, €13K bonus, €5K sign-on, €4K equity/year, €10K relocation',
+        baseSalary: '€7,000/month',
+        baseSalaryNumber: 84000,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Software Engineer Intern',
+        guid: 'ksccpkfvsxtvsdjw0ug',
+        specialization: '',
+        city: 'Amsterdam (flexible days)',
+        companyName: 'IMC Trading',
+        totalCompensation: '€75,000',
+        totalCompensationNumber: 75000,
+        totalCompensationDetails: '',
+        baseSalary: '€6,250/month',
+        baseSalaryNumber: 75000,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Software Engineer',
+        guid: 'ksiuibn96oi79nyhpvk',
+        specialization: '',
+        city: 'Amsterdam',
+        companyName: 'Booking.com',
+        totalCompensation: '€97,500',
+        totalCompensationNumber: 97500,
+        totalCompensationDetails: '€80K salary, €12K bonus, €6K equity/year, €5K relocation',
+        baseSalary: '€6,667/month',
+        baseSalaryNumber: 80000,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Software Developer',
+        guid: 'ksa62vfdc59z8ou9swh',
+        specialization: '',
+        city: 'Amsterdam',
+        companyName: 'Booking.com',
+        totalCompensation: '€101,000',
+        totalCompensationNumber: 101000,
+        totalCompensationDetails: '€83K salary, €13K bonus, €6K equity/year',
+        baseSalary: '€6,917/month',
+        baseSalaryNumber: 83000,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Senior Data Scientist',
+        guid: 'ksivuxg5qk0mah1v3f9',
+        specialization: 'Insights',
+        city: 'Amsterdam (flexible days)',
+        companyName: 'Booking.com',
+        totalCompensation: '€138,000',
+        totalCompensationNumber: 138000,
+        totalCompensationDetails: '€106K salary, €21K bonus, €11K equity/year, €5K relocation',
+        baseSalary: '€8,833/month',
+        baseSalaryNumber: 106000,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Senior Software Engineer',
+        guid: 'ksg3etvbixm8e8pgur9',
+        specialization: '',
+        city: 'Amsterdam (flexible days)',
+        companyName: 'Uber',
+        totalCompensation: '€169,000',
+        totalCompensationNumber: 169000,
+        totalCompensationDetails: '€107K salary, €23K bonus, €13K sign-on, €26K equity/year, €5K benefits',
+        baseSalary: '€8,946/month',
+        baseSalaryNumber: 107350,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Senior Software Engineer',
+        guid: '00ksorjhegev2rv6qpr8e',
+        specialization: '',
+        city: 'Amsterdam',
+        companyName: 'ServiceNow',
+        totalCompensation: '€149,000',
+        totalCompensationNumber: 149000,
+        totalCompensationDetails: '€90K salary, €9K bonus, €50K equity/year, €1K benefits',
+        baseSalary: '€7,500/month',
+        baseSalaryNumber: 90000,
+        oldYearForData: '2019',
+        otherContext: ''
+      },    
+      {
+        title: 'Lead Developer',
+        guid: '86ksoqmth7mttop40dle',
+        specialization: '',
+        city: 'Amsterdam',
+        companyName: 'Booking.com',
+        totalCompensation: '€159,000',
+        totalCompensationNumber: 159000,
+        totalCompensationDetails: '€121K salary, €24K bonus, €13K equity/year, €4K benefits',
+        baseSalary: '€10,083/month',
+        baseSalaryNumber: 121000,
+        oldYearForData: '2020',
+        otherContext: ''
+      },    
+      {
+        title: '🔒 Above senior-level position within software engineering',
+        guid: 'y0ksoqxjjlo4reqxuizb',
+        specialization: '',
+        city: 'Amsterdam',
+        companyName: 'Booking.com',
+        totalCompensation: '€181,000',
+        totalCompensationNumber: 181000,
+        totalCompensationDetails: '€131K salary, €33K bonus, €17K equity/year, €1K benefits',
+        baseSalary: '€10,917/month',
+        baseSalaryNumber: 131000,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Quantitative Technologist',
+        guid: 'ksayohozw2fdmi4vh8',
+        specialization: '',
+        city: 'Amsterdam',
+        companyName: '🔒 Proprietary Trading Firm ',
+        totalCompensation: '€190,000',
+        totalCompensationNumber: 190000,
+        totalCompensationDetails: '€150K salary, €40K bonus',
+        baseSalary: '€12,500/month',
+        baseSalaryNumber: 150000,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Senior Developer',
+        guid: '9vkspeprmhw1wf6ehqfba',
+        specialization: '',
+        city: 'Amsterdam',
+        companyName: 'Booking.com',
+        totalCompensation: '€172,000',
+        totalCompensationNumber: 172000,
+        totalCompensationDetails: '€116K salary, €23K bonus, €33K equity/year, €1K benefits, €3K relocation',
+        baseSalary: '€9,667/month',
+        baseSalaryNumber: 116000,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: '🔒 Senior-level position within software engineering',
+        guid: 'ksixqgam492tzyib3mg',
+        specialization: '',
+        city: 'Amsterdam (flexible days)',
+        companyName: 'Databricks',
+        totalCompensation: '€227,000',
+        totalCompensationNumber: 227000,
+        totalCompensationDetails: '€124K salary, €19K bonus, €84K equity/year',
+        baseSalary: '€10,333/month',
+        baseSalaryNumber: 124000,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Software Engineer',
+        guid: 'kshgkiw94gx4n4jxem6',
+        specialization: 'L4',
+        city: 'Amsterdam',
+        companyName: 'Databricks',
+        totalCompensation: '€158,000',
+        totalCompensationNumber: 158000,
+        totalCompensationDetails: '€82K salary, €10K bonus, €5K sign-on, €60K equity/year, €3K relocation',
+        baseSalary: '€6,858/month',
+        baseSalaryNumber: 82296,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Solutions Architect',
+        guid: 'ksj6mihnfawpcxkjnp4',
+        specialization: 'L5',
+        city: 'Amsterdam',
+        companyName: 'Databricks',
+        totalCompensation: '€181,000',
+        totalCompensationNumber: 181000,
+        totalCompensationDetails: '€104K salary, €18K bonus, €59K equity/year',
+        baseSalary: '€8,667/month',
+        baseSalaryNumber: 104000,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Product Designer I',
+        guid: 'ksdjpaxellwnj5a6g3',
+        specialization: '',
+        city: 'Amsterdam (flexible days)',
+        companyName: 'Uber',
+        totalCompensation: '€76,000',
+        totalCompensationNumber: 76000,
+        totalCompensationDetails: '€60K salary, €6K bonus, €10K equity/year',
+        baseSalary: '€5,000/month',
+        baseSalaryNumber: 60000,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Product Manager II',
+        guid: 'ksd2ovtbvpvntdu827',
+        specialization: '',
+        city: 'Amsterdam (hybrid option)',
+        companyName: 'Uber',
+        totalCompensation: '€112,000',
+        totalCompensationNumber: 112000,
+        totalCompensationDetails: '€89K salary, €16K bonus, €8K equity/year, €9K benefits',
+        baseSalary: '€7,375/month',
+        baseSalaryNumber: 88500,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Principal Solution Engineer',
+        guid: 'ksemu0wodgp3ysm6lf',
+        specialization: '',
+        city: 'Hybrid option',
+        companyName: 'Salesforce',
+        totalCompensation: '€166,000',
+        totalCompensationNumber: 166000,
+        totalCompensationDetails: '€118K salary, €39K bonus, €10K equity/year, €25K benefits',
+        baseSalary: '€9,792/month',
+        baseSalaryNumber: 117500,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: '🔒 Senior-level position within software engineering',
+        guid: 'ksc1xxsyd0di8afxcqu',
+        specialization: '',
+        city: 'Amsterdam',
+        companyName: 'Booking.com',
+        totalCompensation: '€149,000',
+        totalCompensationNumber: 149000,
+        totalCompensationDetails: '€102K salary, €20K bonus, €10K sign-on, €17K equity/year',
+        baseSalary: '€8,500/month',
+        baseSalaryNumber: 102000,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Senior Software Engineer',
+        guid: 'ksek31mr7wzw0qs73z',
+        specialization: '',
+        city: 'Amsterdam (hybrid option)',
+        companyName: 'GitHub',
+        totalCompensation: '€141,000',
+        totalCompensationNumber: 141000,
+        totalCompensationDetails: '€116K salary, €17K bonus, €7K equity/year, €4K benefits',
+        baseSalary: '€9,667/month',
+        baseSalaryNumber: 116000,
+        oldYearForData: '2020',
+        otherContext: ''
+      },    
+      {
+        title: 'Senior Software Engineer',
+        guid: 'ksekol5b04tkvu3ddaaa',
+        specialization: '',
+        city: 'Rotterdam (remote from anywhere)',
+        companyName: 'Shopify',
+        totalCompensation: '€134,000',
+        totalCompensationNumber: 134000,
+        totalCompensationDetails: '€108K salary, €26K equity/year, €5K benefits',
+        baseSalary: '€9,000/month',
+        baseSalaryNumber: 108000,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Senior Software Engineer',
+        guid: 'ksdpv09wv7jy93y1k9',
+        specialization: '',
+        city: 'Amsterdam',
+        companyName: 'Booking.com',
+        totalCompensation: '€131,000',
+        totalCompensationNumber: 131000,
+        totalCompensationDetails: '€100K salary, €20K bonus, €11K equity/year',
+        baseSalary: '€8,333/month',
+        baseSalaryNumber: 100000,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Software engineer',
+        guid: 'ksdde6t6ab2svj50urn',
+        specialization: 'Data Engineer',
+        city: 'Remote within country',
+        companyName: 'Twilio',
+        totalCompensation: '€210,000',
+        totalCompensationNumber: 210000,
+        totalCompensationDetails: '€85K salary, €125K equity/year, €12K benefits',
+        baseSalary: '€7,056/month',
+        baseSalaryNumber: 84672,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Solutions Architect',
+        guid: 'ksd7ley4ve3ew0bvvio',
+        specialization: '',
+        city: 'Amsterdam (flexible days)',
+        companyName: 'Databricks',
+        totalCompensation: '€214,000',
+        totalCompensationNumber: 214000,
+        totalCompensationDetails: '€120K salary, €24K bonus, €70K equity/year',
+        baseSalary: '€10,000/month',
+        baseSalaryNumber: 120000,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Software Engineering Manager',
+        guid: 'ksa4pjb3aw70vai1ej9',
+        specialization: '',
+        city: 'Amsterdam',
+        companyName: 'Booking.com',
+        totalCompensation: '€149,000',
+        totalCompensationNumber: 149000,
+        totalCompensationDetails: '€111K salary, €25K bonus, €13K equity/year',
+        baseSalary: '€9,225/month',
+        baseSalaryNumber: 110700,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Software Engineer',
+        guid: 'ksb33ufgjuoqlrhr648',
+        specialization: '',
+        city: 'Amsterdam',
+        companyName: 'Booking.com',
+        totalCompensation: '€105,000',
+        totalCompensationNumber: 105000,
+        totalCompensationDetails: '€86K salary, €13K bonus, €6K equity/year',
+        baseSalary: '€7,200/month',
+        baseSalaryNumber: 86400,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Software Engineering Intern',
+        guid: 'ksb30luba5knh4obcub',
+        specialization: '',
+        city: 'Amsterdam',
+        companyName: 'Uber',
+        totalCompensation: '€57,500',
+        totalCompensationNumber: 57500,
+        totalCompensationDetails: '',
+        baseSalary: '€4,800/month',
+        baseSalaryNumber: 57600,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Senior Developer',
+        guid: 'ksb6excewpdpbij0ypq',
+        specialization: '',
+        city: 'Amsterdam',
+        companyName: 'Booking.com',
+        totalCompensation: '€145,000',
+        totalCompensationNumber: 145000,
+        totalCompensationDetails: '€102K salary, €14K bonus, €29K equity/year',
+        baseSalary: '€8,500/month',
+        baseSalaryNumber: 102000,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Software Engineer',
+        guid: 'ksb6g0yvv7wkgo0j7q',
+        specialization: 'L3',
+        city: 'Amsterdam',
+        companyName: 'Uber',
+        totalCompensation: '€82,500',
+        totalCompensationNumber: 82500,
+        totalCompensationDetails: '€69K salary, €8K bonus, €6K equity/year',
+        baseSalary: '€5,750/month',
+        baseSalaryNumber: 69000,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Software Engineer',
+        guid: 'ksb5hxfpnmoflz4kkq',
+        specialization: 'Frontend',
+        city: 'Amsterdam',
+        companyName: 'Booking.com',
+        totalCompensation: '€129,000',
+        totalCompensationNumber: 129000,
+        totalCompensationDetails: '€90K salary, €15K bonus, €24K equity/year',
+        baseSalary: '€7,500/month',
+        baseSalaryNumber: 90000,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Network engineer',
+        guid: 'ksb4rio2rfbu00uglkl',
+        specialization: '',
+        city: 'Amsterdam',
+        companyName: 'Booking.com',
+        totalCompensation: '€96,500',
+        totalCompensationNumber: 96500,
+        totalCompensationDetails: '€78K salary, €12K bonus, €7K equity/year',
+        baseSalary: '€6,500/month',
+        baseSalaryNumber: 78000,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Senior Software Engineer',
+        guid: 'ksafyuioh3v78e4cbb5',
+        specialization: '',
+        city: 'Amsterdam (flexible days)',
+        companyName: '🔒 Travel company with Dutch HQ',
+        totalCompensation: '€131,000',
+        totalCompensationNumber: 131000,
+        totalCompensationDetails: '€100K salary, €20K bonus, €11K equity/year',
+        baseSalary: '€8,333/month',
+        baseSalaryNumber: 100000,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Senior Developer',
+        guid: 'ksakk6j7hqiont14ng4',
+        specialization: '',
+        city: 'Amsterdam',
+        companyName: 'Booking.com',
+        totalCompensation: '€162,000',
+        totalCompensationNumber: 162000,
+        totalCompensationDetails: '€110K salary, €17K bonus, €35K equity/year',
+        baseSalary: '€9,167/month',
+        baseSalaryNumber: 110000,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Principal Developer',
+        guid: 'ksa6c78kvndmzlv2iu',
+        specialization: '',
+        city: 'Amsterdam',
+        companyName: 'Booking.com',
+        totalCompensation: '€192,000',
+        totalCompensationNumber: 192000,
+        totalCompensationDetails: '€135K salary, €35K bonus, €22K equity/year',
+        baseSalary: '€11,250/month',
+        baseSalaryNumber: 135000,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Engineering Manager ',
+        guid: 'ksa82ckwe2d6s4b0ymf',
+        specialization: '',
+        city: 'Amsterdam',
+        companyName: 'Booking.com',
+        totalCompensation: '€161,000',
+        totalCompensationNumber: 161000,
+        totalCompensationDetails: '€125K salary, €25K bonus, €11K equity/year',
+        baseSalary: '€10,417/month',
+        baseSalaryNumber: 125000,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Engineering Manager',
+        guid: 'ksa5up9v2g684bbm0nr',
+        specialization: '',
+        city: 'Amsterdam',
+        companyName: 'GitLab',
+        totalCompensation: '€179,000',
+        totalCompensationNumber: 179000,
+        totalCompensationDetails: '€104K salary, €75K equity/year',
+        baseSalary: '€8,667/month',
+        baseSalaryNumber: 104000,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Senior Developer',
+        guid: 'ksa6riidvtv74otghec',
+        specialization: 'iOS',
+        city: 'Amsterdam',
+        companyName: 'Booking.com',
+        totalCompensation: '€144,000',
+        totalCompensationNumber: 144000,
+        totalCompensationDetails: '€104K salary, €23K bonus, €17K equity/year',
+        baseSalary: '€8,667/month',
+        baseSalaryNumber: 104000,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: '🔒 Senior-level position within software engineering',
+        guid: 'ksaa7lj1uvsgxx9eryi',
+        specialization: '',
+        city: 'Amsterdam (remote within country)',
+        companyName: 'Booking.com',
+        totalCompensation: '€150,000',
+        totalCompensationNumber: 150000,
+        totalCompensationDetails: '€107K salary, €21K bonus, €10K sign-on, €11K equity/year, €3K benefits',
+        baseSalary: '€8,917/month',
+        baseSalaryNumber: 107000,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Staff Software Engineer',
+        guid: 'ksa5wky5jzjonqam3l',
+        specialization: '',
+        city: 'Remote',
+        companyName: 'GitLab',
+        totalCompensation: '€140,000',
+        totalCompensationNumber: 140000,
+        totalCompensationDetails: '€110K salary, €30K equity/year',
+        baseSalary: '€9,167/month',
+        baseSalaryNumber: 110000,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Senior Backend Developer',
+        guid: 'ksayv3pv23q9ibn92pt',
+        specialization: '',
+        city: 'Amsterdam',
+        companyName: 'Booking.com',
+        totalCompensation: '€150,000',
+        totalCompensationNumber: 150000,
+        totalCompensationDetails: '€105K salary, €20K bonus, €25K equity/year',
+        baseSalary: '€8,750/month',
+        baseSalaryNumber: 105000,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Software Engineer',
+        guid: 'ksahy5nd0zwdifs59i7',
+        specialization: '',
+        city: 'Amsterdam',
+        companyName: 'Flow Traders',
+        totalCompensation: '€200,000',
+        totalCompensationNumber: 200000,
+        totalCompensationDetails: '€80K salary, €120K bonus',
+        baseSalary: '€6,667/month',
+        baseSalaryNumber: 80000,
+        oldYearForData: '2020',
+        otherContext: ''
+      },    
+      {
+        title: 'Senior Software Engineer',
+        guid: 'ksb4skl2x0txpnmzn6m',
+        specialization: '',
+        city: 'Amsterdam',
+        companyName: 'Uber',
+        totalCompensation: '€170,000',
+        totalCompensationNumber: 170000,
+        totalCompensationDetails: '€110K salary, €20K bonus, €40K equity/year',
+        baseSalary: '€9,167/month',
+        baseSalaryNumber: 110000,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Senior Software Engineer ',
+        guid: 'ksaw2vsuzx3d9e3iyx',
+        specialization: '',
+        city: 'Amsterdam',
+        companyName: '🔒 Trading company',
+        totalCompensation: '€130,000',
+        totalCompensationNumber: 130000,
+        totalCompensationDetails: '€110K salary, €20K bonus',
+        baseSalary: '€9,167/month',
+        baseSalaryNumber: 110000,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Software Developer',
+        guid: 'ksa810a2eozo9wcbqlg',
+        specialization: '',
+        city: 'Amsterdam',
+        companyName: 'IMC Trading',
+        totalCompensation: '€162,000',
+        totalCompensationNumber: 162000,
+        totalCompensationDetails: '€112K salary, €50K bonus',
+        baseSalary: '€9,333/month',
+        baseSalaryNumber: 112000,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Software Engineer',
+        guid: 'ksakovde4eb9ikqcr5e',
+        specialization: '',
+        city: 'Amsterdam',
+        companyName: 'IMC Trading',
+        totalCompensation: '€187,000',
+        totalCompensationNumber: 187000,
+        totalCompensationDetails: '€107K salary, €80K bonus',
+        baseSalary: '€8,917/month',
+        baseSalaryNumber: 107000,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'FPGA Engineer ',
+        guid: 'ksb34nthl2sot2pp6x',
+        specialization: '',
+        city: 'Amsterdam',
+        companyName: 'IMC Trading',
+        totalCompensation: '€135,000',
+        totalCompensationNumber: 135000,
+        totalCompensationDetails: '€85K salary, €50K bonus',
+        baseSalary: '€7,083/month',
+        baseSalaryNumber: 85000,
+        oldYearForData: '2020',
+        otherContext: ''
+      },    
+      {
+        title: 'Quantitative Technologist',
+        guid: 'ksaymu8stf59jmif6ci',
+        specialization: '',
+        city: 'Amsterdam',
+        companyName: '🔒 Proprietary Trading Firm ',
+        totalCompensation: '€195,000',
+        totalCompensationNumber: 195000,
+        totalCompensationDetails: '€140K salary, €55K bonus',
+        baseSalary: '€11,667/month',
+        baseSalaryNumber: 140000,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Lead Software Engineer',
+        guid: 'ksai2ss3xojhmnponld',
+        specialization: '',
+        city: 'Amsterdam',
+        companyName: 'Salesforce',
+        totalCompensation: '€149,000',
+        totalCompensationNumber: 149000,
+        totalCompensationDetails: '€104K salary, €16K bonus, €29K equity/year',
+        baseSalary: '€8,667/month',
+        baseSalaryNumber: 104000,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Team Lead',
+        guid: 'ksay8lad1x9f44votrti',
+        specialization: '',
+        city: 'Amsterdam',
+        companyName: 'Booking.com',
+        totalCompensation: '€120,000',
+        totalCompensationNumber: 120000,
+        totalCompensationDetails: '€90K salary, €14K bonus, €17K equity/year',
+        baseSalary: '€7,500/month',
+        baseSalaryNumber: 90000,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Software Engineer',
+        guid: 'ksayzmhrsenomhza0g',
+        specialization: '',
+        city: 'Amsterdam',
+        companyName: 'Flow Traders',
+        totalCompensation: '€100,000',
+        totalCompensationNumber: 100000,
+        totalCompensationDetails: '€65K salary, €35K bonus',
+        baseSalary: '€5,417/month',
+        baseSalaryNumber: 65000,
+        oldYearForData: '2020',
+        otherContext: ''
+      },    
+      {
+        title: 'Senior Software Engineer',
+        guid: 'ksayshn88y07tpbf45g',
+        specialization: '',
+        city: 'Remote (remote within country)',
+        companyName: 'GoDaddy',
+        totalCompensation: '€153,000',
+        totalCompensationNumber: 153000,
+        totalCompensationDetails: '€118K salary, €11K bonus, €24K equity/year',
+        baseSalary: '€9,833/month',
+        baseSalaryNumber: 118000,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Software Development Engineer 2',
+        guid: 'ksaz1og0a8uds2aojl',
+        specialization: 'L5',
+        city: 'Amsterdam',
+        companyName: 'Amazon',
+        totalCompensation: '€143,000',
+        totalCompensationNumber: 143000,
+        totalCompensationDetails: '€71K salary, €72K equity/year',
+        baseSalary: '€5,917/month',
+        baseSalaryNumber: 71000,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Site Reliability Engineer',
+        guid: 'ks74zrn52pdyg22dw75',
+        specialization: '',
+        city: 'Amsterdam',
+        companyName: '🔒 Travel company with Dutch HQ',
+        totalCompensation: '€131,000',
+        totalCompensationNumber: 131000,
+        totalCompensationDetails: '€92K salary, €14K bonus, €20K sign-on, €6K equity/year, €2K benefits, €8K relocation',
+        baseSalary: '€7,667/month',
+        baseSalaryNumber: 92000,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Senior Front End Developer',
+        guid: 'ks7imlaxfnwa4v3z37',
+        specialization: '',
+        city: 'Amsterdam (flexible days)',
+        companyName: 'Booking.com',
+        totalCompensation: '€134,000',
+        totalCompensationNumber: 134000,
+        totalCompensationDetails: '€101K salary, €20K bonus, €13K equity/year, €5K relocation',
+        baseSalary: '€8,375/month',
+        baseSalaryNumber: 100500,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Software Developer',
+        guid: 'ks7dvtm6xg266e16qn',
+        specialization: '',
+        city: 'Amsterdam (flexible days)',
+        companyName: 'Booking.com',
+        totalCompensation: '€106,000',
+        totalCompensationNumber: 106000,
+        totalCompensationDetails: '€82K salary, €12K bonus, €6K sign-on, €6K equity/year',
+        baseSalary: '€6,833/month',
+        baseSalaryNumber: 82000,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Senior Software Engineer ',
+        guid: 'ks79sp1dc5hyex1wna8',
+        specialization: '',
+        city: 'Hybrid option',
+        companyName: 'Elastic',
+        totalCompensation: '€208,000',
+        totalCompensationNumber: 208000,
+        totalCompensationDetails: '€108K salary, €100K equity/year',
+        baseSalary: '€9,000/month',
+        baseSalaryNumber: 108000,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Engineering Manager',
+        guid: 'ks7o417032czjfqyp41',
+        specialization: '',
+        city: 'Amsterdam (flexible days)',
+        companyName: 'Booking.com',
+        totalCompensation: '€156,000',
+        totalCompensationNumber: 156000,
+        totalCompensationDetails: '€112K salary, €22K bonus, €10K sign-on, €11K equity/year, €3K benefits',
+        baseSalary: '€9,333/month',
+        baseSalaryNumber: 112000,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Software Engineer 2',
+        guid: 'ks8u0qnlazumd11eh7v',
+        specialization: 'L5',
+        city: 'null (flexible days)',
+        companyName: 'Amazon',
+        totalCompensation: '€116,000',
+        totalCompensationNumber: 116000,
+        totalCompensationDetails: '€101K salary, €15K sign-on, €2K benefits, €5K relocation',
+        baseSalary: '€8,417/month',
+        baseSalaryNumber: 101000,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Senior Developer',
+        guid: 'ks8i9epfmtf1buvfpq8',
+        specialization: '',
+        city: 'Amsterdam',
+        companyName: 'Booking.com',
+        totalCompensation: '€127,000',
+        totalCompensationNumber: 127000,
+        totalCompensationDetails: '€102K salary, €12K bonus, €13K equity/year',
+        baseSalary: '€8,458/month',
+        baseSalaryNumber: 101500,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Lead Software Engineer',
+        guid: 'kqkn0srvycr22cdf7p8',
+        specialization: '',
+        city: 'Amsterdam (remote within country)',
+        companyName: '🔒 US cryptocurrency startup, Series C stage',
+        totalCompensation: '€260,000',
+        totalCompensationNumber: 260000,
+        totalCompensationDetails: '€115K salary, €15K bonus, €15K sign-on, €115K equity/year',
+        baseSalary: '€9,583/month',
+        baseSalaryNumber: 115000,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Software Engineer',
+        guid: 'kqkmrzv652m0gk534df',
+        specialization: '',
+        city: 'Amsterdam',
+        companyName: '🔒 Cryptocurrency company',
+        totalCompensation: '€120,000',
+        totalCompensationNumber: 120000,
+        totalCompensationDetails: '€70K salary, €50K bonus',
+        baseSalary: '€5,833/month',
+        baseSalaryNumber: 70000,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Senior Software Engineer ',
+        guid: 'kqjquzvsx3w71a1q19',
+        specialization: '',
+        city: 'Amsterdam',
+        companyName: 'GitHub',
+        totalCompensation: '€156,000',
+        totalCompensationNumber: 156000,
+        totalCompensationDetails: '€93K salary, €12K bonus, €51K equity/year, €6K benefits',
+        baseSalary: '€7,750/month',
+        baseSalaryNumber: 93000,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Senior Software Developer',
+        guid: 'kqkxyi20ywukdor8le',
+        specialization: '',
+        city: 'Amsterdam',
+        companyName: 'Booking.com',
+        totalCompensation: '€156,000',
+        totalCompensationNumber: 156000,
+        totalCompensationDetails: '€102K salary, €20K bonus, €34K equity/year',
+        baseSalary: '€8,500/month',
+        baseSalaryNumber: 102000,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Senior Software Engineer',
+        guid: 'kqjsnzdd4qk67ufpvhp',
+        specialization: '',
+        city: 'Amsterdam',
+        companyName: 'Booking.com',
+        totalCompensation: '€134,000',
+        totalCompensationNumber: 134000,
+        totalCompensationDetails: '€93K salary, €19K bonus, €22K equity/year',
+        baseSalary: '€7,750/month',
+        baseSalaryNumber: 93000,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Software Engineer 2',
+        guid: 'kqjr2hr5rh1f2eeaxzn',
+        specialization: '',
+        city: 'Amsterdam',
+        companyName: 'Uber',
+        totalCompensation: '€135,000',
+        totalCompensationNumber: 135000,
+        totalCompensationDetails: '€90K salary, €11K bonus, €34K equity/year, €7K benefits',
+        baseSalary: '€7,500/month',
+        baseSalaryNumber: 90000,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Software Engineer',
+        guid: 'kqjjayw9t2kkyzc9ta',
+        specialization: '',
+        city: 'Amsterdam',
+        companyName: '🔒 FinTech company with Dutch HQ',
+        totalCompensation: '€117,000',
+        totalCompensationNumber: 117000,
+        totalCompensationDetails: '€71K salary, €46K equity/year',
+        baseSalary: '€5,917/month',
+        baseSalaryNumber: 71000,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Software Development Engineer 2',
+        guid: 'kqjivq4dt3xf2x1ayae',
+        specialization: 'L5',
+        city: 'Amsterdam',
+        companyName: 'Amazon',
+        totalCompensation: '€123,000',
+        totalCompensationNumber: 123000,
+        totalCompensationDetails: '€95K salary, €8K bonus, €20K equity/year',
+        baseSalary: '€7,917/month',
+        baseSalaryNumber: 95000,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Senior Developer',
+        guid: 'kqjj4ps522147l840xe',
+        specialization: '',
+        city: 'Amsterdam',
+        companyName: '🔒 FinTech company with Dutch HQ',
+        totalCompensation: '€140,000',
+        totalCompensationNumber: 140000,
+        totalCompensationDetails: '€92K salary, €48K equity/year',
+        baseSalary: '€7,667/month',
+        baseSalaryNumber: 92000,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Senior Software Engineer',
+        guid: 'kqjny37bmsgzptrgli',
+        specialization: 'Level 6',
+        city: 'Amsterdam',
+        companyName: 'Elastic',
+        totalCompensation: '€136,000',
+        totalCompensationNumber: 136000,
+        totalCompensationDetails: '€98K salary, €38K equity/year',
+        baseSalary: '€8,167/month',
+        baseSalaryNumber: 98000,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Software Engineer 2',
+        guid: 'kqjregz4xj4k76nsdmc',
+        specialization: '',
+        city: 'Amsterdam',
+        companyName: 'Uber',
+        totalCompensation: '€110,000',
+        totalCompensationNumber: 110000,
+        totalCompensationDetails: '€82K salary, €12K bonus, €16K equity/year',
+        baseSalary: '€6,833/month',
+        baseSalaryNumber: 82000,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Principal Developer',
+        guid: 'kqif6d6933qm3628e0g',
+        specialization: '',
+        city: 'Amsterdam',
+        companyName: '🔒 Travel company with Dutch HQ',
+        totalCompensation: '€238,000',
+        totalCompensationNumber: 238000,
+        totalCompensationDetails: '€126K salary, €45K bonus, €67K equity/year',
+        baseSalary: '€10,500/month',
+        baseSalaryNumber: 126000,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Staff Software Engineer',
+        guid: 'kqi6tgv66r2vi3rgfit',
+        specialization: '',
+        city: 'Amsterdam',
+        companyName: '🔒 Dutch FinTech company',
+        totalCompensation: '€145,000',
+        totalCompensationNumber: 145000,
+        totalCompensationDetails: '€105K salary, €40K equity/year',
+        baseSalary: '€8,750/month',
+        baseSalaryNumber: 105000,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Senior Machine Learning Engineer ',
+        guid: 'kqjqt7bopema6s09swj',
+        specialization: '',
+        city: 'Amsterdam',
+        companyName: 'Booking.com',
+        totalCompensation: '€159,000',
+        totalCompensationNumber: 159000,
+        totalCompensationDetails: '€105K salary, €20K bonus, €34K equity/year',
+        baseSalary: '€8,750/month',
+        baseSalaryNumber: 105000,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Senior Software Engineer',
+        guid: 'kqifxmzapw7qdwjip4',
+        specialization: '',
+        city: 'Amsterdam',
+        companyName: '🔒 Ride sharing company',
+        totalCompensation: '€170,000',
+        totalCompensationNumber: 170000,
+        totalCompensationDetails: '€115K salary, €20K bonus, €35K equity/year',
+        baseSalary: '€9,583/month',
+        baseSalaryNumber: 115000,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Senior Software Engineer',
+        guid: 'kqifb6g03gep7w36r0t',
+        specialization: '',
+        city: 'Amsterdam',
+        companyName: 'Elastic',
+        totalCompensation: '€149,000',
+        totalCompensationNumber: 149000,
+        totalCompensationDetails: '€115K salary, €34K equity/year',
+        baseSalary: '€9,583/month',
+        baseSalaryNumber: 115000,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Senior Software Engineer',
+        guid: 'kqif7hepa6s0kuo587w',
+        specialization: '',
+        city: 'Amsterdam',
+        companyName: 'Uber',
+        totalCompensation: '€178,000',
+        totalCompensationNumber: 178000,
+        totalCompensationDetails: '€120K salary, €20K bonus, €38K equity/year, €10K benefits',
+        baseSalary: '€10,000/month',
+        baseSalaryNumber: 120000,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Engineering Manager',
+        guid: 'kqievo5oqw8jau41of',
+        specialization: '',
+        city: 'Amsterdam',
+        companyName: 'Booking.com',
+        totalCompensation: '€130,000',
+        totalCompensationNumber: 130000,
+        totalCompensationDetails: '€100K salary, €20K bonus, €10K equity/year, €1K benefits',
+        baseSalary: '€8,333/month',
+        baseSalaryNumber: 100000,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Site Reliability Engineer',
+        guid: 'kqi6xthvl3njn0m3hi',
+        specialization: '',
+        city: 'Amsterdam',
+        companyName: 'Booking.com',
+        totalCompensation: '€120,000',
+        totalCompensationNumber: 120000,
+        totalCompensationDetails: '€90K salary, €14K bonus, €17K equity/year',
+        baseSalary: '€7,500/month',
+        baseSalaryNumber: 90000,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Software Developer',
+        guid: 'kqkxxtt942amec1gmrq',
+        specialization: 'Core',
+        city: 'Amsterdam',
+        companyName: 'Booking.com',
+        totalCompensation: '€121,000',
+        totalCompensationNumber: 121000,
+        totalCompensationDetails: '€88K salary, €13K bonus, €20K equity/year',
+        baseSalary: '€7,333/month',
+        baseSalaryNumber: 88000,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Product Manager',
+        guid: 'kqhzfuwgeym8xq0q29',
+        specialization: '',
+        city: 'Amsterdam',
+        companyName: '🔒 Travel company with Dutch HQ',
+        totalCompensation: '€99,000',
+        totalCompensationNumber: 99000,
+        totalCompensationDetails: '€82K salary, €12K bonus, €5K equity/year',
+        baseSalary: '€6,833/month',
+        baseSalaryNumber: 82000,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Principal Engineer',
+        guid: 'kqjila51hb3wq4txhlv',
+        specialization: 'L7',
+        city: 'Amsterdam',
+        companyName: 'Amazon ',
+        totalCompensation: '€190,000',
+        totalCompensationNumber: 190000,
+        totalCompensationDetails: '€135K salary, €55K equity/year',
+        baseSalary: '€11,250/month',
+        baseSalaryNumber: 135000,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Principal Software Engineer',
+        guid: 'kqjab9n6mr1gno550q',
+        specialization: '',
+        city: 'Amsterdam',
+        companyName: 'Booking.com',
+        totalCompensation: '€219,000',
+        totalCompensationNumber: 219000,
+        totalCompensationDetails: '€128K salary, €40K bonus, €51K equity/year',
+        baseSalary: '€10,667/month',
+        baseSalaryNumber: 128000,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Senior Software Engineer',
+        guid: 'kqj9s12908lfa2tvgwp9',
+        specialization: '',
+        city: 'Flexible days',
+        companyName: 'Uber',
+        totalCompensation: '€155,000',
+        totalCompensationNumber: 155000,
+        totalCompensationDetails: '€113K salary, €20K bonus, €22K equity/year',
+        baseSalary: '€9,417/month',
+        baseSalaryNumber: 113000,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Software Engineer',
+        guid: 'kqjr1nltk8g65auv53k',
+        specialization: '',
+        city: 'Amsterdam',
+        companyName: 'Booking.com',
+        totalCompensation: '€125,000',
+        totalCompensationNumber: 125000,
+        totalCompensationDetails: '€83K salary, €22K bonus, €20K equity/year',
+        baseSalary: '€6,917/month',
+        baseSalaryNumber: 83000,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Senior Software Developer',
+        guid: 'krnxbmjq76o7tuto4w',
+        specialization: '',
+        city: 'Amsterdam',
+        companyName: 'Booking.com',
+        totalCompensation: '€132,000',
+        totalCompensationNumber: 132000,
+        totalCompensationDetails: '€103K salary, €19K bonus, €11K equity/year',
+        baseSalary: '€8,542/month',
+        baseSalaryNumber: 102500,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Software Engineer',
+        guid: 'kqkwrt4jwelo24h1k08',
+        specialization: 'Intern',
+        city: 'Amsterdam',
+        companyName: 'Amazon',
+        totalCompensation: '€45,900',
+        totalCompensationNumber: 45900,
+        totalCompensationDetails: '€46K salary, €10K benefits',
+        baseSalary: '€3,825/month',
+        baseSalaryNumber: 45900,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Software Engineer 1',
+        guid: 'krnx80tjlbpex2lf2np',
+        specialization: '',
+        city: 'Amsterdam',
+        companyName: 'Uber',
+        totalCompensation: '€103,000',
+        totalCompensationNumber: 103000,
+        totalCompensationDetails: '€78K salary, €9K bonus, €17K equity/year',
+        baseSalary: '€6,483/month',
+        baseSalaryNumber: 77800,
+        oldYearForData: '2020',
+        otherContext: ''
+      },    
+      {
+        title: 'Senior Analyst',
+        guid: 'krnxirp28aghsssd3o5',
+        specialization: '',
+        city: 'Amsterdam',
+        companyName: 'Uber',
+        totalCompensation: '€143,000',
+        totalCompensationNumber: 143000,
+        totalCompensationDetails: '€80K salary, €13K bonus, €50K equity/year',
+        baseSalary: '€6,667/month',
+        baseSalaryNumber: 80000,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'SDE 1',
+        guid: 'krpdbmknypxnaoqolm',
+        specialization: 'L4',
+        city: 'Amsterdam',
+        companyName: 'Amazon',
+        totalCompensation: '€86,000',
+        totalCompensationNumber: 86000,
+        totalCompensationDetails: '€66K salary, €16K sign-on, €4K equity/year',
+        baseSalary: '€5,535/month',
+        baseSalaryNumber: 66420,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+      {
+        title: 'Senior Developer',
+        guid: 'kqku9gaxwmc67zs4uqm',
+        specialization: 'Frontend',
+        city: 'Amsterdam',
+        companyName: 'Booking.com',
+        totalCompensation: '€141,000',
+        totalCompensationNumber: 141000,
+        totalCompensationDetails: '€104K salary, €16K bonus, €21K equity/year',
+        baseSalary: '€8,667/month',
+        baseSalaryNumber: 104000,
+        oldYearForData: '',
+        otherContext: ''
+      },    
+    ];
+</script>
+
+
+
+    <script defer data-domain="techpays.eu" src="https://plausible.io/js/plausible.js"></script>
+    <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
+</body>
+</html>
