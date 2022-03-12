@@ -1,4 +1,4 @@
-import { Container, Divider, Header, Image, Icon } from 'semantic-ui-react';
+import { Container, Divider, Header, Image, Icon, Button } from 'semantic-ui-react';
 import './App.css';
 import CompensationDataVisualization from './CompensationDataVisualization';
 import DataDisclaimerMessage from './DataDisclaimerMessage';
@@ -11,9 +11,14 @@ function App() {
     <div
       style={{ display: "flex", minHeight: "100vh", flexDirection: "column" }}
     >
-      <Container textAlign='center' style={{paddingTop:"30px"}}>
+      <Container textAlign='center' style={{ paddingTop: "30px" }}>
         <Header as='h2' color='black'>
           Netherlands Engineering Salaries
+          <Header sub textAlign='right'>
+            <Button color='instagram' as='a' href="https://github.com/javaadpatel/tech-pays-eu-graphs/">
+              <Icon name='github' /> View source code on GitHub
+            </Button>
+          </Header>
         </Header>
         <Divider clearing />
         <DataSourceMessage />
@@ -22,7 +27,7 @@ function App() {
           <Icon name='building outline' circular />
           <Header.Content>What is the difference between company tiers?</Header.Content>
         </Header>
-        <Image src={require('./images/company_tiers.png')} size='huge' centered bordered/>
+        <Image src={require('./images/company_tiers.png')} size='huge' centered bordered />
         <DataDisclaimerMessage />
       </Container>
     </div>
