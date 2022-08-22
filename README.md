@@ -1,5 +1,7 @@
 # tech-pays-graphs
- Graphical view of techpays.eu website's data
+ Graphical view of techpays.eu website's data.
+
+ Checkout the website: https://techpayseu-graphs.netlify.app/
 
 
 # Deployment process
